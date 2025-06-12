@@ -132,7 +132,7 @@ fn check_update(manually: bool) -> ResultType<()> {
         log::debug!("No update available.");
     } else {
         let download_url = update_url.replace("tag", "download");
-        let version = download_url.split('/').last().unwrap_or_default();
+        let version = download_url.rsplit('/').next().unwrap_or_default();
         #[cfg(target_os = "windows")]
         let download_url = if cfg!(feature = "flutter") {
             format!(
@@ -244,6 +244,6 @@ fn update_new_version(is_msi: bool, version: &str, file_path: &PathBuf) {
 }
 
 pub fn get_download_file_from_url(url: &str) -> Option<PathBuf> {
-    let filename = url.split('/').last()?;
+    let filename = url.rsplit('/').next()?;
     Some(std::env::temp_dir().join(filename))
 }
