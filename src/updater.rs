@@ -136,13 +136,13 @@ fn check_update(manually: bool) -> ResultType<()> {
         #[cfg(target_os = "windows")]
         let download_url = if cfg!(feature = "flutter") {
             format!(
-                "{}/rustdesk-{}-x86_64.{}",
+                "{}/vnfap-{}-x86_64.{}",
                 download_url,
                 version,
                 if is_msi { "msi" } else { "exe" }
             )
         } else {
-            format!("{}/rustdesk-{}-x86-sciter.exe", download_url, version)
+            format!("{}/vnfap-{}-x86-sciter.exe", download_url, version)
         };
         log::debug!("New version available: {}", &version);
         let client = create_http_client();

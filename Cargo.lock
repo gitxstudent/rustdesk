@@ -123,7 +123,7 @@ checksum = "e999941b234f3131b00bc13c22d06e8c5ff726d1b6318ac7eb276997bbb4fef0"
 [[package]]
 name = "android-wakelock"
 version = "0.1.0"
-source = "git+https://github.com/rustdesk-org/android-wakelock#d0292e5a367e627c4fa6f1ca6bdfad005dca7d90"
+source = "git+https://github.com/vnfap-org/android-wakelock#d0292e5a367e627c4fa6f1ca6bdfad005dca7d90"
 dependencies = [
  "jni",
  "log",
@@ -224,7 +224,7 @@ checksum = "b3d1d046238990b9cf5bcde22a3fb3584ee5cf65fb2765f454ed428c7a0063da"
 [[package]]
 name = "arboard"
 version = "3.4.0"
-source = "git+https://github.com/rustdesk-org/arboard#4e16bad260ea05dd7dcdb68cc7549dad3920b940"
+source = "git+https://github.com/vnfap-org/arboard#4e16bad260ea05dd7dcdb68cc7549dad3920b940"
 dependencies = [
  "clipboard-win",
  "core-graphics 0.23.2",
@@ -1010,7 +1010,7 @@ dependencies = [
 [[package]]
 name = "clipboard-master"
 version = "4.0.0-beta.6"
-source = "git+https://github.com/rustdesk-org/clipboard-master#4fb62e5b62fb6350d82b571ec7ba94b3cd466695"
+source = "git+https://github.com/vnfap-org/clipboard-master#4fb62e5b62fb6350d82b571ec7ba94b3cd466695"
 dependencies = [
  "objc",
  "objc-foundation",
@@ -1146,7 +1146,7 @@ dependencies = [
 [[package]]
 name = "confy"
 version = "0.4.0-2"
-source = "git+https://github.com/rustdesk-org/confy#83db9ec19a2f97e9718aef69e4fc5611bb382479"
+source = "git+https://github.com/vnfap-org/confy#83db9ec19a2f97e9718aef69e4fc5611bb382479"
 dependencies = [
  "directories-next",
  "serde 1.0.203",
@@ -1382,7 +1382,7 @@ dependencies = [
 [[package]]
 name = "cpal"
 version = "0.15.3"
-source = "git+https://github.com/rustdesk-org/cpal?branch=osx-screencapturekit#6b374bcaed076750ca8fce6da518ab39b882e14a"
+source = "git+https://github.com/vnfap-org/cpal?branch=osx-screencapturekit#6b374bcaed076750ca8fce6da518ab39b882e14a"
 dependencies = [
  "alsa",
  "cidre",
@@ -1682,7 +1682,7 @@ dependencies = [
 [[package]]
 name = "default_net"
 version = "0.1.0"
-source = "git+https://github.com/rustdesk-org/default_net#78f8f70cd85151a3a2c4a3230d80d5272703c02e"
+source = "git+https://github.com/vnfap-org/default_net#78f8f70cd85151a3a2c4a3230d80d5272703c02e"
 dependencies = [
  "anyhow",
  "regex",
@@ -2071,7 +2071,7 @@ checksum = "a0474425d51df81997e2f90a21591180b38eccf27292d755f3e30750225c175b"
 [[package]]
 name = "evdev"
 version = "0.11.5"
-source = "git+https://github.com/rustdesk-org/evdev#cec616e37790293d2cd2aa54a96601ed6b1b35a9"
+source = "git+https://github.com/vnfap-org/evdev#cec616e37790293d2cd2aa54a96601ed6b1b35a9"
 dependencies = [
  "bitvec",
  "libc",
@@ -3226,7 +3226,7 @@ checksum = "9a3a5bfb195931eeb336b2a7b4d761daec841b97f947d34394601737a7bba5e4"
 [[package]]
 name = "hwcodec"
 version = "0.7.1"
-source = "git+https://github.com/rustdesk-org/hwcodec#0ea7e709d3c48bb6446e33a9cc8fd0e0da5709b9"
+source = "git+https://github.com/vnfap-org/hwcodec#0ea7e709d3c48bb6446e33a9cc8fd0e0da5709b9"
 dependencies = [
  "bindgen 0.59.2",
  "cc",
@@ -3376,7 +3376,7 @@ dependencies = [
 [[package]]
 name = "impersonate_system"
 version = "0.1.0"
-source = "git+https://github.com/rustdesk-org/impersonate-system#2f429010a5a10b1fe5eceb553c6672fd53d20167"
+source = "git+https://github.com/vnfap-org/impersonate-system#2f429010a5a10b1fe5eceb553c6672fd53d20167"
 dependencies = [
  "cc",
 ]
@@ -3571,7 +3571,7 @@ dependencies = [
 [[package]]
 name = "keepawake"
 version = "0.4.3"
-source = "git+https://github.com/rustdesk-org/keepawake-rs#64d568586dd16551d02120e19668d2b0fec8e3c9"
+source = "git+https://github.com/vnfap-org/keepawake-rs#64d568586dd16551d02120e19668d2b0fec8e3c9"
 dependencies = [
  "anyhow",
  "cfg-if 1.0.0",
@@ -3870,7 +3870,7 @@ dependencies = [
 [[package]]
 name = "machine-uid"
 version = "0.3.0"
-source = "git+https://github.com/rustdesk-org/machine-uid#381ff579c1dc3a6c54db9dfec47c44bcb0246542"
+source = "git+https://github.com/vnfap-org/machine-uid#381ff579c1dc3a6c54db9dfec47c44bcb0246542"
 dependencies = [
  "bindgen 0.59.2",
  "cc",
@@ -3880,7 +3880,7 @@ dependencies = [
 [[package]]
 name = "magnum-opus"
 version = "0.4.0"
-source = "git+https://github.com/rustdesk-org/magnum-opus#5cd2bf989c148662fa3a2d9d539a71d71fd1d256"
+source = "git+https://github.com/vnfap-org/magnum-opus#5cd2bf989c148662fa3a2d9d539a71d71fd1d256"
 dependencies = [
  "bindgen 0.59.2",
  "pkg-config",
@@ -4252,7 +4252,7 @@ dependencies = [
 [[package]]
 name = "nokhwa"
 version = "0.10.7"
-source = "git+https://github.com/rustdesk-org/nokhwa.git?branch=fix_from_raw_parts#744dea9d277dfb18954cef389973c622dd15a85e"
+source = "git+https://github.com/vnfap-org/nokhwa.git?branch=fix_from_raw_parts#744dea9d277dfb18954cef389973c622dd15a85e"
 dependencies = [
  "flume",
  "image 0.25.1",
@@ -4267,7 +4267,7 @@ dependencies = [
 [[package]]
 name = "nokhwa-bindings-linux"
 version = "0.1.1"
-source = "git+https://github.com/rustdesk-org/nokhwa.git?branch=fix_from_raw_parts#744dea9d277dfb18954cef389973c622dd15a85e"
+source = "git+https://github.com/vnfap-org/nokhwa.git?branch=fix_from_raw_parts#744dea9d277dfb18954cef389973c622dd15a85e"
 dependencies = [
  "nokhwa-core",
  "v4l",
@@ -4276,7 +4276,7 @@ dependencies = [
 [[package]]
 name = "nokhwa-bindings-macos"
 version = "0.2.2"
-source = "git+https://github.com/rustdesk-org/nokhwa.git?branch=fix_from_raw_parts#744dea9d277dfb18954cef389973c622dd15a85e"
+source = "git+https://github.com/vnfap-org/nokhwa.git?branch=fix_from_raw_parts#744dea9d277dfb18954cef389973c622dd15a85e"
 dependencies = [
  "block",
  "cocoa-foundation",
@@ -4292,7 +4292,7 @@ dependencies = [
 [[package]]
 name = "nokhwa-bindings-windows"
 version = "0.4.2"
-source = "git+https://github.com/rustdesk-org/nokhwa.git?branch=fix_from_raw_parts#744dea9d277dfb18954cef389973c622dd15a85e"
+source = "git+https://github.com/vnfap-org/nokhwa.git?branch=fix_from_raw_parts#744dea9d277dfb18954cef389973c622dd15a85e"
 dependencies = [
  "dlopen",
  "lazy_static",
@@ -4304,7 +4304,7 @@ dependencies = [
 [[package]]
 name = "nokhwa-core"
 version = "0.1.5"
-source = "git+https://github.com/rustdesk-org/nokhwa.git?branch=fix_from_raw_parts#744dea9d277dfb18954cef389973c622dd15a85e"
+source = "git+https://github.com/vnfap-org/nokhwa.git?branch=fix_from_raw_parts#744dea9d277dfb18954cef389973c622dd15a85e"
 dependencies = [
  "bytes",
  "image 0.25.1",
@@ -4815,7 +4815,7 @@ dependencies = [
 [[package]]
 name = "pam"
 version = "0.7.0"
-source = "git+https://github.com/rustdesk-org/pam#7bfd25510202cd269292cbdd7c71f3977a6fd762"
+source = "git+https://github.com/vnfap-org/pam#7bfd25510202cd269292cbdd7c71f3977a6fd762"
 dependencies = [
  "libc",
  "pam-macros",
@@ -4837,7 +4837,7 @@ dependencies = [
 [[package]]
 name = "pam-sys"
 version = "1.0.0-alpha4"
-source = "git+https://github.com/rustdesk-org/pam-sys?branch=fix/v1.0.0-alpha4_gnuc_va_list#3337c9bb9a9c68d7497ec8c93cad2368c26091b7"
+source = "git+https://github.com/vnfap-org/pam-sys?branch=fix/v1.0.0-alpha4_gnuc_va_list#3337c9bb9a9c68d7497ec8c93cad2368c26091b7"
 dependencies = [
  "bindgen 0.59.2",
  "libc",
@@ -4871,7 +4871,7 @@ dependencies = [
 [[package]]
 name = "parity-tokio-ipc"
 version = "0.7.3-5"
-source = "git+https://github.com/rustdesk-org/parity-tokio-ipc#c8c8bbcbabf9be1201c53afb0269b92b9b02d291"
+source = "git+https://github.com/vnfap-org/parity-tokio-ipc#c8c8bbcbabf9be1201c53afb0269b92b9b02d291"
 dependencies = [
  "futures",
  "libc",
@@ -5618,7 +5618,7 @@ dependencies = [
 [[package]]
 name = "rdev"
 version = "0.5.0-2"
-source = "git+https://github.com/rustdesk-org/rdev#f9b60b1dd0f3300a1b797d7a74c116683cd232c8"
+source = "git+https://github.com/vnfap-org/rdev#f9b60b1dd0f3300a1b797d7a74c116683cd232c8"
 dependencies = [
  "cocoa 0.24.1",
  "core-foundation 0.9.4",
@@ -5737,7 +5737,7 @@ dependencies = [
 [[package]]
 name = "reqwest"
 version = "0.12.15"
-source = "git+https://github.com/rustdesk-org/reqwest#9e859438203a71eb86ddc294fbebfde14cba7f7c"
+source = "git+https://github.com/vnfap-org/reqwest#9e859438203a71eb86ddc294fbebfde14cba7f7c"
 dependencies = [
  "async-compression",
  "base64 0.22.1",
@@ -5885,7 +5885,7 @@ dependencies = [
 [[package]]
 name = "rust-pulsectl"
 version = "0.2.12"
-source = "git+https://github.com/rustdesk-org/pulsectl#aa34dde499aa912a3abc5289cc0b547bd07dd6e2"
+source = "git+https://github.com/vnfap-org/pulsectl#aa34dde499aa912a3abc5289cc0b547bd07dd6e2"
 dependencies = [
  "libpulse-binding",
 ]
@@ -5918,7 +5918,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rustdesk"
+name = "vnfap"
 version = "1.4.0"
 dependencies = [
  "android-wakelock",
@@ -6020,7 +6020,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rustdesk-portable-packer"
+name = "vnfap-portable-packer"
 version = "1.4.0"
 dependencies = [
  "brotli",
@@ -6198,7 +6198,7 @@ dependencies = [
 [[package]]
 name = "sciter-rs"
 version = "0.5.57"
-source = "git+https://github.com/rustdesk-org/rust-sciter?branch=dyn#5322f3a755a0e6bf999fbc60d1efc35246c0f821"
+source = "git+https://github.com/vnfap-org/rust-sciter?branch=dyn#5322f3a755a0e6bf999fbc60d1efc35246c0f821"
 dependencies = [
  "lazy_static",
  "libc",
@@ -6655,7 +6655,7 @@ dependencies = [
 [[package]]
 name = "sysinfo"
 version = "0.29.10"
-source = "git+https://github.com/rustdesk-org/sysinfo?branch=rlim_max#90b1705d909a4902dbbbdea37ee64db17841077d"
+source = "git+https://github.com/vnfap-org/sysinfo?branch=rlim_max#90b1705d909a4902dbbbdea37ee64db17841077d"
 dependencies = [
  "cfg-if 1.0.0",
  "core-foundation-sys 0.8.7",
@@ -6728,7 +6728,7 @@ dependencies = [
 [[package]]
 name = "tao"
 version = "0.25.0"
-source = "git+https://github.com/rustdesk-org/tao?branch=dev#288c219cb0527e509590c2b2d8e7072aa9feb2d3"
+source = "git+https://github.com/vnfap-org/tao?branch=dev#288c219cb0527e509590c2b2d8e7072aa9feb2d3"
 dependencies = [
  "bitflags 1.3.2",
  "cc",
@@ -6768,7 +6768,7 @@ dependencies = [
 [[package]]
 name = "tao-macros"
 version = "0.1.2"
-source = "git+https://github.com/rustdesk-org/tao?branch=dev#288c219cb0527e509590c2b2d8e7072aa9feb2d3"
+source = "git+https://github.com/vnfap-org/tao?branch=dev#288c219cb0527e509590c2b2d8e7072aa9feb2d3"
 dependencies = [
  "proc-macro2 1.0.93",
  "quote 1.0.36",
@@ -6850,7 +6850,7 @@ dependencies = [
 [[package]]
 name = "tfc"
 version = "0.7.0"
-source = "git+https://github.com/rustdesk-org/The-Fat-Controller?branch=history/rebase_upstream_20240722#78bb80a8e596e4c14ae57c8448f5fca75f91f2b0"
+source = "git+https://github.com/vnfap-org/The-Fat-Controller?branch=history/rebase_upstream_20240722#78bb80a8e596e4c14ae57c8448f5fca75f91f2b0"
 dependencies = [
  "anyhow",
  "core-graphics 0.23.2",
@@ -7031,7 +7031,7 @@ dependencies = [
 [[package]]
 name = "tokio-socks"
 version = "0.5.2-3"
-source = "git+https://github.com/rustdesk-org/tokio-socks#bdb9aa3de5bac41602d0742b8ef6bbc6bfebd127"
+source = "git+https://github.com/vnfap-org/tokio-socks#bdb9aa3de5bac41602d0742b8ef6bbc6bfebd127"
 dependencies = [
  "bytes",
  "either",
@@ -7573,7 +7573,7 @@ dependencies = [
 [[package]]
 name = "wallpaper"
 version = "3.2.0"
-source = "git+https://github.com/rustdesk-org/wallpaper.rs#ce4a0cd3f58327c7cc44d15a63706fb0c022bacf"
+source = "git+https://github.com/vnfap-org/wallpaper.rs#ce4a0cd3f58327c7cc44d15a63706fb0c022bacf"
 dependencies = [
  "dirs 5.0.1",
  "enquote",
@@ -7785,7 +7785,7 @@ dependencies = [
 [[package]]
 name = "webm"
 version = "1.1.0"
-source = "git+https://github.com/rustdesk-org/rust-webm#d2c4d3ac133c7b0e4c0f656da710b48391981e64"
+source = "git+https://github.com/vnfap-org/rust-webm#d2c4d3ac133c7b0e4c0f656da710b48391981e64"
 dependencies = [
  "webm-sys",
 ]
@@ -7793,7 +7793,7 @@ dependencies = [
 [[package]]
 name = "webm-sys"
 version = "1.0.4"
-source = "git+https://github.com/rustdesk-org/rust-webm#d2c4d3ac133c7b0e4c0f656da710b48391981e64"
+source = "git+https://github.com/vnfap-org/rust-webm#d2c4d3ac133c7b0e4c0f656da710b48391981e64"
 dependencies = [
  "cc",
 ]

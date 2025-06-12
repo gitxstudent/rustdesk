@@ -1,19 +1,19 @@
 [Desktop Entry]
-Name=RustDesk
+Name=VNFap
 GenericName=Remote Desktop
 Comment=Remote Desktop
-Exec=rustdesk %u
-Icon=rustdesk
+Exec=vnfap %u
+Icon=vnfap
 Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Network;RemoteAccess;GTK;
 Keywords=internet;
 Actions=new-window;
-StartupWMClass=rustdesk
+StartupWMClass=vnfap
 
 X-Desktop-File-Install-Version=0.23
 
 [Desktop Action new-window]
 Name=Open a New Window
-Exec=rustdesk %u
+Exec=vnfap %u

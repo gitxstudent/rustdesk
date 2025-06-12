@@ -869,26 +869,8 @@ class _SafetyState extends State<_Safety> with AutomaticKeepAliveClientMixin {
         child: Tooltip(
           waitDuration: Duration(milliseconds: 300),
           message: translate("enable-bot-tip"),
-          child: InkWell(
-              child: Obx(() => Row(
-                    children: [
-                      Checkbox(
-                              value: hasBot.value,
-                              onChanged: enabled ? onChangedBot : null)
-                          .marginOnly(right: 5),
-                      Expanded(
-                          child: Text(
-                        translate('Telegram bot'),
-                        style: TextStyle(
-                            color: disabledTextColor(context, enabled)),
-                      ))
-                    ],
-                  ))),
-        ),
-        onTap: () {
-          onChangedBot(!hasBot.value);
-        },
-      ).marginOnly(left: _kCheckBoxLeftMargin + 30);
+          child: SizedBox.shrink(),
+        ).marginOnly(left: _kCheckBoxLeftMargin + 30);
 
       final trust = Row(
         children: [

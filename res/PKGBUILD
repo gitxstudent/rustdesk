@@ -1,4 +1,4 @@
-pkgname=rustdesk
+pkgname=vnfap
 pkgver=1.4.0
 pkgrel=0
 epoch=
@@ -23,13 +23,13 @@ md5sums=() #generate with 'makepkg -g'
 
 package() {
   if [[ ${FLUTTER} ]]; then
-	  mkdir -p "${pkgdir}/usr/share/rustdesk" && cp -r ${HBB}/flutter/build/linux/x64/release/bundle/* -t "${pkgdir}/usr/share/rustdesk"
+	  mkdir -p "${pkgdir}/usr/share/vnfap" && cp -r ${HBB}/flutter/build/linux/x64/release/bundle/* -t "${pkgdir}/usr/share/vnfap"
   fi
   mkdir -p "${pkgdir}/usr/bin"
-  pushd ${pkgdir} && ln -s /usr/share/rustdesk/rustdesk usr/bin/rustdesk && popd
-  install -Dm 644 $HBB/res/rustdesk.service -t "${pkgdir}/usr/share/rustdesk/files"
-  install -Dm 644 $HBB/res/rustdesk.desktop -t "${pkgdir}/usr/share/rustdesk/files"
-  install -Dm 644 $HBB/res/rustdesk-link.desktop -t "${pkgdir}/usr/share/rustdesk/files"
-  install -Dm 644 $HBB/res/128x128@2x.png "${pkgdir}/usr/share/icons/hicolor/256x256/apps/rustdesk.png"
-  install -Dm 644 $HBB/res/scalable.svg "${pkgdir}/usr/share/icons/hicolor/scalable/apps/rustdesk.svg"
+  pushd ${pkgdir} && ln -s /usr/share/vnfap/vnfap usr/bin/vnfap && popd
+  install -Dm 644 $HBB/res/vnfap.service -t "${pkgdir}/usr/share/vnfap/files"
+  install -Dm 644 $HBB/res/vnfap.desktop -t "${pkgdir}/usr/share/vnfap/files"
+  install -Dm 644 $HBB/res/vnfap-link.desktop -t "${pkgdir}/usr/share/vnfap/files"
+  install -Dm 644 $HBB/res/128x128@2x.png "${pkgdir}/usr/share/icons/hicolor/256x256/apps/vnfap.png"
+  install -Dm 644 $HBB/res/scalable.svg "${pkgdir}/usr/share/icons/hicolor/scalable/apps/vnfap.svg"
 }

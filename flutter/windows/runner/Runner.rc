@@ -92,7 +92,7 @@ BEGIN
             VALUE "CompanyName", "HuyMin" "\0"
             VALUE "FileDescription", "VNFap Remote Desktop" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "rustdesk" "\0"
+            VALUE "InternalName", "vnfap" "\0"
             VALUE "LegalCopyright", "Copyright © 2025 HuyMin. All rights reserved." "\0"
             VALUE "OriginalFilename", "vnfap.exe" "\0"
             VALUE "ProductName", "VNFap" "\0"
