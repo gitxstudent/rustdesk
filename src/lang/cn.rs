@@ -545,7 +545,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("auto_disconnect_option_tip", "自动关闭不活跃的会话"),
         ("Connection failed due to inactivity", "由于长时间无操作, 连接被自动断开"),
         ("Check for software update on startup", "启动时检查软件更新"),
-        ("upgrade_vnfap_server_pro_to_{}_tip", "请升级专业版服务器到{}或更高版本！"),
         ("pull_group_failed_tip", "获取组信息失败"),
         ("Filter by intersection", "按交集过滤"),
         ("Remove wallpaper during incoming sessions", "接受会话时移除桌面壁纸"),

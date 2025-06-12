@@ -545,7 +545,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("auto_disconnect_option_tip", "Αυτόματη αποσύνδεση απομακρυσμένης συνεδρίας έπειτα από την πάροδο του χρονικού ορίου αδράνειας "),
         ("Connection failed due to inactivity", "Η σύνδεση τερματίστηκε έπειτα από την πάροδο του χρόνου αδράνειας"),
         ("Check for software update on startup", "Έλεγχος για ενημερώσεις κατα την εκκίνηση"),
-        ("upgrade_vnfap_server_pro_to_{}_tip", "Παρακαλώ ενημερώστε τον VNFap Server στην έκδοση {} ή νεότερη!"),
         ("pull_group_failed_tip", "Αποτυχία ανανέωσης της ομάδας"),
         ("Filter by intersection", ""),
         ("Remove wallpaper during incoming sessions", "Αφαίρεση εικόνας φόντου στις εισερχόμενες συνδέσεις"),
