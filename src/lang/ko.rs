@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "비밀번호 설정"),
         ("OS Password", "OS 비밀번호"),
         ("install_tip", "UAC(사용자 계정 컨트롤)로 인해 일부 원격 제어 기능이 제한될 수 있습니다. 모든 기능을 사용하려면 VNFap를 시스템에 설치해야 합니다."),
-        ("Click to upgrade", "업그레이드하려면 클릭하세요."),
         ("Click to download", "다운로드하려면 클릭하세요."),
         ("Click to update", "업데이트하려면 클릭하세요."),
         ("Configure", "구성"),

@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "Määra parool"),
         ("OS Password", "Opsüsteemi parool"),
         ("install_tip", "Kasutajakonto kontrolli (UAC) tõttu ei saa VNFap mõnel juhul korralikult kaugjuhtimispoolena töötada. Kontrolli vältimiseks palun klõpsa alloleval nupul, et VNFap oma süsteemi paigaldada."),
-        ("Click to upgrade", "Vajuta täiendamiseks"),
         ("Click to download", "Vajuta allalaadimiseks"),
         ("Click to update", "Vajuta uuendamiseks"),
         ("Configure", "Seadista"),

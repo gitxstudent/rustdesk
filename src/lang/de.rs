@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "Passwort festlegen"),
         ("OS Password", "Betriebssystem-Passwort"),
         ("install_tip", "Aufgrund der Benutzerkontensteuerung (UAC) kann VNFap in manchen Fällen nicht ordnungsgemäß funktionieren. Um die Benutzerkontensteuerung zu umgehen, klicken Sie bitte auf die Schaltfläche unten und installieren VNFap auf dem System."),
-        ("Click to upgrade", "Zum Upgraden klicken"),
         ("Click to download", "Zum Herunterladen klicken"),
         ("Click to update", "Zum Aktualisieren klicken"),
         ("Configure", "Konfigurieren"),

@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "設定密碼"),
         ("OS Password", "作業系統密碼"),
         ("install_tip", "UAC 會導致 VNFap 在某些情況下無法正常作為遠端端點運作。若要避開 UAC，請點選下方按鈕將 VNFap 安裝到系統中。"),
-        ("Click to upgrade", "點選以升級"),
         ("Click to download", "點選以下載"),
         ("Click to update", "點選以更新"),
         ("Configure", "設定"),

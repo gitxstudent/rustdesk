@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "Définir le mot de passe"),
         ("OS Password", "Mot de passe du système d’exploitation"),
         ("install_tip", "VNFap n’est pas installé, ce qui peut limiter son utilisation à cause de l’UAC. Cliquez ci-dessous pour l’installer."),
-        ("Click to upgrade", "Mettre à niveau"),
         ("Click to download", "Télécharger"),
         ("Click to update", "Mettre à jour"),
         ("Configure", "Configurer"),

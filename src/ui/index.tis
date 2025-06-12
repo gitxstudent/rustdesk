@@ -658,7 +658,7 @@ class UpgradeMe: Reactor.Component {
         return <div .install-me>
             <div>{translate('Status')}</div>
             <div>{translate('Your installation is lower version.')}</div>
-            <div #install-me.link>{translate('Click to upgrade')}</div>
+            <div #install-me.link>{translate('Click to update')}</div>
         </div>;
     }
 

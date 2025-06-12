@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "ضبط كلمة المرور"),
         ("OS Password", "كلمة مرور نظام التشغيل"),
         ("install_tip", "بسبب صلاحيات تحكم حساب المستخدم. VNFap قد لا يعمل بشكل صحيح في جهة البعيد في بعض الحالات. لتفادي ذلك. الرجاء الضغط على الزر ادناه لتثبيت VNFap في جهازك."),
-        ("Click to upgrade", "اضغط للارتقاء"),
         ("Click to download", "اضغط للتنزيل"),
         ("Click to update", "ضغط للتحديث"),
         ("Configure", "تهيئة"),

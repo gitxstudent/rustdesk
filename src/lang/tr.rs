@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "Şifre ayarla"),
         ("OS Password", "İşletim Sistemi Şifresi"),
         ("install_tip", "Kullanıcı Hesabı Denetimi nedeniyle, VNFap bir uzak masaüstü olarak düzgün çalışmayabilir. Bu sorunu önlemek için, VNFap'i sistem seviyesinde kurmak için aşağıdaki butona tıklayın."),
-        ("Click to upgrade", "Yükseltmek için tıklayınız"),
         ("Click to download", "İndirmek için tıklayınız"),
         ("Click to update", "Güncellemek için tıklayınız"),
         ("Configure", "Ayarla"),

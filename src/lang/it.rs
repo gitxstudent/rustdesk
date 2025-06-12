@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "Imposta password"),
         ("OS Password", "Password sistema operativo"),
         ("install_tip", "A causa del Controllo Account Utente (UAC), VNFap potrebbe non funzionare correttamente come desktop remoto.\nPer evitare questo problema, fai clic sul tasto qui sotto per installare VNFap a livello di sistema."),
-        ("Click to upgrade", "Aggiorna"),
         ("Click to download", "Download"),
         ("Click to update", "Aggiorna"),
         ("Configure", "Configura"),

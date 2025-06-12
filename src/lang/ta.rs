@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "கடவுச்சொல்லை அமைக்கவும்"),
         ("OS Password", "OS கடவுச்சொல்"),
         ("install_tip", "நிறுவல்_குறிப்பு"),
-        ("Click to upgrade", "மேம்படுத்த கிளிக் செய்யவும்"),
         ("Click to download", "பதிவிறக்க கிளிக் செய்யவும்"),
         ("Click to update", "புதுப்பிக்க கிளிக் செய்யவும்"),
         ("Configure", "உள்ளமை"),

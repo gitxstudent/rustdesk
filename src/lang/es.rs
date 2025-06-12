@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "Configurar la contraseña"),
         ("OS Password", "Contraseña del sistema operativo"),
         ("install_tip", "Debido al Control de cuentas de usuario, es posible que VNFap no funcione correctamente como escritorio remoto. Para evitar este problema, haga clic en el botón de abajo para instalar VNFap a nivel de sistema."),
-        ("Click to upgrade", "Clic para actualizar"),
         ("Click to download", "Clic para descargar"),
         ("Click to update", "Clic para refrescar"),
         ("Configure", "Configurar"),

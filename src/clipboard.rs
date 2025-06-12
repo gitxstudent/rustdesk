@@ -76,7 +76,7 @@ pub fn check_clipboard(
 }
 
 #[cfg(all(feature = "unix-file-copy-paste", target_os = "macos"))]
-pub fn is_file_url_set_by_vnfap(url: &Vec<String>) -> bool {
+pub fn is_file_url_set_by_vnfap(url: &[String]) -> bool {
     if url.len() != 1 {
         return false;
     }

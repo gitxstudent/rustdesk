@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "Postavi lozinku"),
         ("OS Password", "Lozinka OS-a"),
         ("install_tip", "Zbog UAC-a VNFap ne može u nekim slučajevima raditi pravilno. Da biste prevazišli UAC, kliknite na tipku ispod da instalirate VNFap na sustav."),
-        ("Click to upgrade", "Klik za nadogradnju"),
         ("Click to download", "Klik za preuzimanje"),
         ("Click to update", "Klik za ažuriranje"),
         ("Configure", "Konfiguracija"),

@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "Ορίστε κωδικό πρόσβασης"),
         ("OS Password", "Κωδικός πρόσβασης λειτουργικού συστήματος"),
         ("install_tip", "Λόγω UAC, το VNFap ενδέχεται να μην λειτουργεί σωστά σε ορισμένες περιπτώσεις. Για να αποφύγετε το UAC, κάντε κλικ στο κουμπί παρακάτω για να εγκαταστήσετε το VNFap στο σύστημα"),
-        ("Click to upgrade", "Αναβάθμιση τώρα"),
         ("Click to download", "Λήψη τώρα"),
         ("Click to update", "Ενημέρωση τώρα"),
         ("Configure", "Διαμόρφωση"),
