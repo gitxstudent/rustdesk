@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "パスワードを設定"),
         ("OS Password", "OSのパスワード"),
         ("install_tip", "UACの影響により、VNFapがリモートコンピューター上で正常に動作しない場合があります。UACを回避するには、下のボタンをクリックしてシステムにVNFapをインストールしてください。"),
-        ("Click to upgrade", "アップグレード"),
         ("Click to download", "ダウンロード"),
         ("Click to update", "アップデート"),
         ("Configure", "設定"),

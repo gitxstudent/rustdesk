@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "Nustatyti slaptažodį"),
         ("OS Password", "OS slaptažodis"),
         ("install_tip", "Kai kuriais atvejais UAC gali priversti VNFap netinkamai veikti nuotoliniame pagrindiniame kompiuteryje. Norėdami apeiti UAC, spustelėkite toliau esantį mygtuką, kad įdiegtumėte VNFap į savo kompiuterį."),
-        ("Click to upgrade", "Spustelėkite, jei norite atnaujinti"),
         ("Click to download", "Spustelėkite norėdami atsisiųsti"),
         ("Click to update", "Spustelėkite norėdami atnaujinti"),
         ("Configure", "Konfigūruoti"),

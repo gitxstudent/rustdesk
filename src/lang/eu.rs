@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "Ezarri pasahitza"),
         ("OS Password", "Sistema eragilearen pasahitza"),
         ("install_tip", "Erabiltzaile Kontuen Kontrolarengatik, VNFap ezin du ondo funtzionatu urruneko mahaigainean. EKK saihesteko, mesedez, egin klik azpiko botoian VNFap sistema mailan instalatzeko."),
-        ("Click to upgrade", "Egin klik bertsio-berritzeko"),
         ("Click to download", "Egin klik deskargatzeko"),
         ("Click to update", "Egin klik eguneratzeko"),
         ("Configure", "Konfiguratu"),

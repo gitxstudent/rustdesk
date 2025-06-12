@@ -179,9 +179,7 @@ pub fn translate_locale(name: String, locale: &str) -> String {
             s = s.replace("{}", &value);
         }
         if !crate::is_vnfap() {
-            if s.contains("VNFap")
-                && !name.starts_with("upgrade_vnfap_server_pro")
-                && name != "powered_by_me"
+            if s.contains("VNFap") && name != "powered_by_me"
             {
                 s = s.replace("VNFap", &crate::get_app_name());
             }

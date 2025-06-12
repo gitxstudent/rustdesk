@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "تنظیم رمزعبور"),
         ("OS Password", "رمز عبور سیستم عامل"),
         ("install_tip", "لطفا برنامه را نصب کنید UAC و جلوگیری از خطای VNFap برای راحتی در استفاده از نرم افزار"),
-        ("Click to upgrade", "برای ارتقا کلیک کنید"),
         ("Click to download", "برای دانلود کلیک کنید"),
         ("Click to update", "برای به روز رسانی کلیک کنید"),
         ("Configure", "تنظیم"),

@@ -34,6 +34,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "Set password"),
         ("OS Password", "OS password"),
         ("install_tip", "Due to UAC, VNFap can not work properly as the remote side in some cases. To avoid UAC, please click the button below to install VNFap to the system."),
+        ("Click to update", "Click to update"),
         ("config_acc", "In order to control your Desktop remotely, you need to grant VNFap \"Accessibility\" permissions."),
         ("config_screen", "In order to access your Desktop remotely, you need to grant VNFap \"Screen Recording\" permissions."),
         ("Installation Path", "Installation path"),

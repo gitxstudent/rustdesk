@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", ""),
         ("OS Password", ""),
         ("install_tip", ""),
-        ("Click to upgrade", ""),
         ("Click to download", ""),
         ("Click to update", ""),
         ("Configure", ""),

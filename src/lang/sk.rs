@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "Nastaviť heslo"),
         ("OS Password", "Heslo do operačného systému"),
         ("install_tip", "V niektorých prípadoch VNFap nefunguje správne z dôvodu riadenia užívateľských oprávnení (UAC). Vyhnete sa tomu kliknutím na nižšie zobrazene tlačítko a nainštalovaním RuskDesk do systému."),
-        ("Click to upgrade", "Kliknutím nainštalujete aktualizáciu"),
         ("Click to download", "Kliknutím potvrďte stiahnutie"),
         ("Click to update", "Kliknutím aktualizovať"),
         ("Configure", "Nastaviť"),

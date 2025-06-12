@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "Nastavit heslo"),
         ("OS Password", "Heslo do operačního systému"),
         ("install_tip", "Kvůli řízení oprávnění v systému (UAC), VNFap v některých případech na protistraně nefunguje správně. Abyste se UAC vyhnuli, klikněte na níže uvedené tlačítko a nainstalujte tak VNFap do systému."),
-        ("Click to upgrade", "Aktualizovat"),
         ("Click to download", "Stáhnout"),
         ("Click to update", "Aktualizovat"),
         ("Configure", "Nastavit"),

@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "Indstil adgangskode"),
         ("OS Password", "Operativsystemadgangskode"),
         ("install_tip", "På grund af UAC kan VNFap ikke fungere korrekt i nogle tilfælde på fjernskrivebordet. For at undgå UAC skal du klikke på knappen nedenfor for at installere VNFap på systemet"),
-        ("Click to upgrade", "Klik for at opgradere"),
         ("Click to download", "Klik for at downloade"),
         ("Click to update", "Klik for at opdatere"),
         ("Configure", "Konfigurer"),

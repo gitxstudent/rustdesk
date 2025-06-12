@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "ตั้งรหัสผ่าน"),
         ("OS Password", "รหัสผ่านระบบปฏิบัติการ"),
         ("install_tip", "เนื่องด้วยข้อจำกัดของการใช้งาน UAC ทำให้ VNFap ไม่สามารถทำงานได้ปกติในฝั่งปลายทางในบางครั้ง เพื่อหลีกเลี่ยงข้อจำกัดของ UAC กรุณากดปุ่มด้านล่างเพื่อติดตั้ง VNFap ไปยังระบบของคุณ"),
-        ("Click to upgrade", "คลิกเพื่ออัปเกรด"),
         ("Click to download", "คลิกเพื่อดาวน์โหลด"),
         ("Click to update", "คลิกเพื่ออัปเดต"),
         ("Configure", "ปรับแต่งค่า"),

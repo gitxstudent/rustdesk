@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "Jelszó beállítása"),
         ("OS Password", "Operációs rendszer jelszavának beállítása"),
         ("install_tip", "Előfordul, hogy bizonyos esetekben hiba léphet fel a Portable verzió használatakor. A megfelelő működés érdekében, telepítse a VNFap alkalmazást a számítógépére."),
-        ("Click to upgrade", "Kattintson ide a frissítés telepítéséhez"),
         ("Click to download", "Kattintson ide a letöltéshez"),
         ("Click to update", "Kattintson ide a frissítés letöltéséhez"),
         ("Configure", "Beállítás"),

@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "Imposta sa crae"),
         ("OS Password", "Crae sistema operativu"),
         ("install_tip", "Pro neghe de su Controllu Contu Utente (UAC), VNFap diat pòdere non funtzionare comente si tocat comente iscrivania remota.\nPro evitare custu problema, incarca in su butone inoghe in suta pro installare VNFap a livellu de sistema."),
-        ("Click to upgrade", "Atualiza"),
         ("Click to download", "Iscàrriga"),
         ("Click to update", "Annoa"),
         ("Configure", "Cunfigura"),

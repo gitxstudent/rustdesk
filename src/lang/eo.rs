@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "Agordi pasvorton"),
         ("OS Password", "Pasvorto de la operaciumo"),
         ("install_tip", "Vi ne uzas instalita versio. Pro limigoj pro UAC, kiel aparato kontrolata, en kelkaj kazoj, ne estos ebla kontroli la muson kaj klavaron aŭ registri la ekranon. Bonvolu alkliku la butonon malsupre por instali VNFap sur la operaciumo por eviti la demando supre."),
-        ("Click to upgrade", "Alklaki por plibonigi"),
         ("Click to download", "Alklaki por elŝuti"),
         ("Click to update", "Alklaki por ĝisdatigi"),
         ("Configure", "Konfiguri"),

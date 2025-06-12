@@ -146,7 +146,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set Password", "Nastavi geslo"),
         ("OS Password", "Geslo operacijskega sistema"),
         ("install_tip", "Zaradi nadzora uporabniškega računa, VNFap v nekaterih primerih na oddaljeni strani ne deluje pravilno. Temu se lahko izognete z namestitvijo."),
-        ("Click to upgrade", "Klikni za nadgradnjo"),
         ("Click to download", "Klikni za prenos"),
         ("Click to update", "Klikni za posodobitev"),
         ("Configure", "Nastavi"),
