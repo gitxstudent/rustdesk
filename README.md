@@ -164,13 +164,4 @@ Please ensure that you are running these commands from the root of the VNFap rep
 - **[flutter](https://github.com/gitxstudent/vnfap/tree/master/flutter)**: Flutter code for desktop and mobile
 - **[flutter/web/js](https://github.com/gitxstudent/vnfap/tree/master/flutter/web/v1/js)**: JavaScript for Flutter web client
 
-## Screenshots
-
-![Connection Manager](https://github.com/gitxstudent/vnfap/assets/28412477/db82d4e7-c4bc-4823-8e6f-6af7eadf7651)
-
-![Connected to a Windows PC](https://github.com/gitxstudent/vnfap/assets/28412477/9baa91e9-3362-4d06-aa1a-7518edcbd7ea)
-
-![File Transfer](https://github.com/gitxstudent/vnfap/assets/28412477/39511ad3-aa9a-4f8c-8947-1cce286a46ad)
-
-![TCP Tunneling](https://github.com/gitxstudent/vnfap/assets/28412477/78e8708f-e87e-4570-8373-1360033ea6c5)
 
