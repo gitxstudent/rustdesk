@@ -27,15 +27,15 @@ g_arpsystemcomponent = {
     },
     "Contact": {
         "msi": "ARPCONTACT",
-        "v": "https://github.com/vnfap/vnfap",
+        "v": "https://github.com/gitxstudent/vnfap",
     },
     "HelpLink": {
         "msi": "ARPHELPLINK",
-        "v": "https://github.com/vnfap/vnfap/issues/",
+        "v": "https://github.com/gitxstudent/vnfap/issues/",
     },
     "ReadMe": {
         "msi": "ARPREADME",
-        "v": "https://github.com/vnfap/vnfap",
+        "v": "https://github.com/gitxstudent/vnfap",
     },
 }
 

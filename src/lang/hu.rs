@@ -545,7 +545,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("auto_disconnect_option_tip", "A bejövő munkamenetek automatikus bezárása, ha a felhasználó inaktív"),
         ("Connection failed due to inactivity", "A kapcsolat inaktivitás miatt megszakadt"),
         ("Check for software update on startup", "Szoftverfrissítés keresése indításkor"),
-        ("upgrade_vnfap_server_pro_to_{}_tip", "Frissítse a VNFap Server Prot a(z) {} vagy újabb verzióra!"),
+        ("upgrade_vnfap_server_pro_to_{}_tip", "Frissítse a VNFap Servert a(z) {} vagy újabb verzióra!"),
         ("pull_group_failed_tip", "A csoport frissítése nem sikerült"),
         ("Filter by intersection", "Szűrés metszéspontok szerint"),
         ("Remove wallpaper during incoming sessions", "Távolítsa el a háttérképet a bejövő munkamenetek közben"),

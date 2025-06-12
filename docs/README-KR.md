@@ -5,7 +5,7 @@
   <a href="#file-structure">Structure</a> •
   <a href="#snapshot">Snapshot</a><br>
   [<a href="../README.md">English</a>] | [<a href="README-UA.md">Українська</a>] | [<a href="README-CS.md">česky</a>] | [<a href="README-ZH.md">中文</a>] | [<a href="README-HU.md">Magyar</a>] | [<a href="README-ES.md">Español</a>] | [<a href="README-FA.md">فارسی</a>] | [<a href="README-FR.md">Français</a>] | [<a href="README-DE.md">Deutsch</a>] | [<a href="README-PL.md">Polski</a>] | [<a href="README-ID.md">Indonesian</a>] | [<a href="README-FI.md">Suomi</a>] | [<a href="README-ML.md">മലയാളം</a>] | [<a href="README-JP.md">日本語</a>] | [<a href="README-NL.md">Nederlands</a>] | [<a href="README-IT.md">Italiano</a>] | [<a href="README-RU.md">Русский</a>] | [<a href="README-PTBR.md">Português (Brasil)</a>] | [<a href="README-EO.md">Esperanto</a>] | [<a href="README-AR.md">العربي</a>] | [<a href="README-VN.md">Tiếng Việt</a>] | [<a href="README-DA.md">Dansk</a>] | [<a href="README-GR.md">Ελληνικά</a>] | [<a href="README-TR.md">Türkçe</a>] | [<a href="README-NO.md">Norsk</a>]<br>
-  <b>이 README와 <a href="https://github.com/vnfap/vnfap/tree/master/src/lang">VNFap UI</a> 및 <a href="https://github.com/vnfap/doc.vnfap.com">VNFap 문서</a>를 여러분의 모국어로 번역하는 데 도움이 필요합니다.</b>
+  <b>이 README와 <a href="https://github.com/gitxstudent/vnfap/tree/master/src/lang">VNFap UI</a> 및 <a href="https://github.com/vnfap/doc.vnfap.com">VNFap 문서</a>를 여러분의 모국어로 번역하는 데 도움이 필요합니다.</b>
 </p>
 
 > [!Caution]
@@ -15,17 +15,17 @@
 
 
 
-Rust로 작성되었고, 설정 없이 바로 사용할 수 있는 원격 데스크톱 소프트웨어입니다. 자신의 데이터를 완전히 제어할 수 있고, 보안 염려도 없습니다. 저희 rendezvous/relay 서버를 사용하거나, [직접 설정](https://vnfap.com/server)하거나 [자체 rendezvous/relay 서버를 구축](https://github.com/vnfap/vnfap-server-demo)할 수도 있습니다.
+Rust로 작성되었고, 설정 없이 바로 사용할 수 있는 원격 데스크톱 소프트웨어입니다. 자신의 데이터를 완전히 제어할 수 있고, 보안 염려도 없습니다. 저희 rendezvous/relay 서버를 사용하거나, [직접 설정](https://vnfap.com/server)하거나 [자체 rendezvous/relay 서버를 구축](https://github.com/gitxstudent/vnfap-server-demo)할 수도 있습니다.
 
 ![image](https://user-images.githubusercontent.com/71636191/171661982-430285f0-2e12-4b1d-9957-4a58e375304d.png)
 
 VNFap는 모든 기여를 환영합니다. 기여하고 싶다면 [`CONTRIBUTING-KR.md`](CONTRIBUTING-KR.md)를 참고해 주세요.
 
-[**자주 묻는 질문 (FAQ)**](https://github.com/vnfap/vnfap/wiki/FAQ)
+[**자주 묻는 질문 (FAQ)**](https://github.com/gitxstudent/vnfap/wiki/FAQ)
 
-[**바이너리 다운로드**](https://github.com/vnfap/vnfap/releases)
+[**바이너리 다운로드**](https://github.com/gitxstudent/vnfap/releases)
 
-[**나이틀리 빌드**](https://github.com/vnfap/vnfap/releases/tag/nightly)
+[**나이틀리 빌드**](https://github.com/gitxstudent/vnfap/releases/tag/nightly)
 
 [<img src="https://f-droid.org/badge/get-it-on.png"
     alt="F-Droid에서 다운로드"
@@ -36,7 +36,7 @@ VNFap는 모든 기여를 환영합니다. 기여하고 싶다면 [`CONTRIBUTING
 
 ## 의존성
 
-데스크톱 버전은 GUI에 Flutter 또는 Sciter (지원 중단됨)를 사용합니다. 이 튜토리얼은 Sciter 전용이며, 시작하기 더 쉽고 친숙하기 때문입니다. Flutter 버전 빌드는 [CI](https://github.com/vnfap/vnfap/blob/master/.github/workflows/flutter-build.yml)를 확인하세요.
+데스크톱 버전은 GUI에 Flutter 또는 Sciter (지원 중단됨)를 사용합니다. 이 튜토리얼은 Sciter 전용이며, 시작하기 더 쉽고 친숙하기 때문입니다. Flutter 버전 빌드는 [CI](https://github.com/gitxstudent/vnfap/blob/master/.github/workflows/flutter-build.yml)를 확인하세요.
 
 Sciter 동적 라이브러리를 직접 다운로드하세요.
 
@@ -115,7 +115,7 @@ cd
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
-git clone --recurse-submodules https://github.com/vnfap/vnfap
+git clone --recurse-submodules https://github.com/gitxstudent/vnfap
 cd vnfap
 mkdir -p target/debug
 wget https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.lnx/x64/libsciter-gtk.so
@@ -128,7 +128,7 @@ VCPKG_ROOT=$HOME/vcpkg cargo run
 먼저 리포지토리를 복제하고 Docker 컨테이너를 빌드합니다:
 
 ```sh
-git clone https://github.com/vnfap/vnfap
+git clone https://github.com/gitxstudent/vnfap
 cd vnfap
 git submodule update --init --recursive
 docker build -t "vnfap-builder" .
@@ -156,25 +156,25 @@ target/release/vnfap
 
 ## 파일 구조
 
-- **[libs/hbb_common](https://github.com/vnfap/vnfap/tree/master/libs/hbb_common)**: 비디오 코덱, 설정, TCP/UDP 래퍼, Protobuf, 파일 전송을 위한 fs 함수 및 기타 유틸리티 함수
-- **[libs/scrap](https://github.com/vnfap/vnfap/tree/master/libs/scrap)**: 화면 캡처
-- **[libs/enigo](https://github.com/vnfap/vnfap/tree/master/libs/enigo)**: 플랫폼별 키보드/마우스 제어
-- **[libs/clipboard](https://github.com/vnfap/vnfap/tree/master/libs/clipboard)**: Windows, Linux, macOS용 파일 복사 및 붙여넣기 구현
-- **[src/ui](https://github.com/vnfap/vnfap/tree/master/src/ui)**: 더 이상 사용되지 않는 Sciter UI (지원 중단됨)
-- **[src/server](https://github.com/vnfap/vnfap/tree/master/src/server)**: 오디오/클립보드/입력/비디오 서비스 및 네트워크 연결
-- **[src/client.rs](https://github.com/vnfap/vnfap/tree/master/src/client.rs)**: 피어 연결 시작
-- **[src/rendezvous_mediator.rs](https://github.com/vnfap/vnfap/tree/master/src/rendezvous_mediator.rs)**: [vnfap-server](https://github.com/vnfap/vnfap-server)와 통신, Remote Direct (TCP Hole Punching) 또는 Relayed Connection 대기
-- **[src/platform](https://github.com/vnfap/vnfap/tree/master/src/platform)**: 플랫폼별 코드
-- **[flutter](https://github.com/vnfap/vnfap/tree/master/flutter)**: 데스크톱 및 모바일용 Flutter 코드
-- **[flutter/web/js](https://github.com/vnfap/vnfap/tree/master/flutter/web/v1/js)**: Flutter 웹 클라이언트용 JavaScript
+- **[libs/hbb_common](https://github.com/gitxstudent/vnfap/tree/master/libs/hbb_common)**: 비디오 코덱, 설정, TCP/UDP 래퍼, Protobuf, 파일 전송을 위한 fs 함수 및 기타 유틸리티 함수
+- **[libs/scrap](https://github.com/gitxstudent/vnfap/tree/master/libs/scrap)**: 화면 캡처
+- **[libs/enigo](https://github.com/gitxstudent/vnfap/tree/master/libs/enigo)**: 플랫폼별 키보드/마우스 제어
+- **[libs/clipboard](https://github.com/gitxstudent/vnfap/tree/master/libs/clipboard)**: Windows, Linux, macOS용 파일 복사 및 붙여넣기 구현
+- **[src/ui](https://github.com/gitxstudent/vnfap/tree/master/src/ui)**: 더 이상 사용되지 않는 Sciter UI (지원 중단됨)
+- **[src/server](https://github.com/gitxstudent/vnfap/tree/master/src/server)**: 오디오/클립보드/입력/비디오 서비스 및 네트워크 연결
+- **[src/client.rs](https://github.com/gitxstudent/vnfap/tree/master/src/client.rs)**: 피어 연결 시작
+- **[src/rendezvous_mediator.rs](https://github.com/gitxstudent/vnfap/tree/master/src/rendezvous_mediator.rs)**: [vnfap-server](https://github.com/gitxstudent/vnfap-server)와 통신, Remote Direct (TCP Hole Punching) 또는 Relayed Connection 대기
+- **[src/platform](https://github.com/gitxstudent/vnfap/tree/master/src/platform)**: 플랫폼별 코드
+- **[flutter](https://github.com/gitxstudent/vnfap/tree/master/flutter)**: 데스크톱 및 모바일용 Flutter 코드
+- **[flutter/web/js](https://github.com/gitxstudent/vnfap/tree/master/flutter/web/v1/js)**: Flutter 웹 클라이언트용 JavaScript
 
 ## 스냅샷
 
-![Connection Manager](https://github.com/vnfap/vnfap/assets/28412477/db82d4e7-c4bc-4823-8e6f-6af7eadf7651)
+![Connection Manager](https://github.com/gitxstudent/vnfap/assets/28412477/db82d4e7-c4bc-4823-8e6f-6af7eadf7651)
 
-![Connected to a Windows PC](https://github.com/vnfap/vnfap/assets/28412477/9baa91e9-3362-4d06-aa1a-7518edcbd7ea)
+![Connected to a Windows PC](https://github.com/gitxstudent/vnfap/assets/28412477/9baa91e9-3362-4d06-aa1a-7518edcbd7ea)
 
-![File Transfer](https://github.com/vnfap/vnfap/assets/28412477/39511ad3-aa9a-4f8c-8947-1cce286a46ad)
+![File Transfer](https://github.com/gitxstudent/vnfap/assets/28412477/39511ad3-aa9a-4f8c-8947-1cce286a46ad)
 
-![TCP Tunneling](https://github.com/vnfap/vnfap/assets/28412477/78e8708f-e87e-4570-8373-1360033ea6c5)
+![TCP Tunneling](https://github.com/gitxstudent/vnfap/assets/28412477/78e8708f-e87e-4570-8373-1360033ea6c5)
 

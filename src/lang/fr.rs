@@ -545,7 +545,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("auto_disconnect_option_tip", "Terminer automatiquement les sessions entrantes en cas d’inactivité de l’utilisateur"),
         ("Connection failed due to inactivity", "Déconnecté automatiquement pour cause d’inactivité"),
         ("Check for software update on startup", "Vérifier la disponibilité des mises à jour au démarrage"),
-        ("upgrade_vnfap_server_pro_to_{}_tip", "Veuillez mettre à jour VNFap Server Pro vers la version {} ou une version ultérieure !"),
+        ("upgrade_vnfap_server_pro_to_{}_tip", "Veuillez mettre à jour VNFap Server vers la version {} ou une version ultérieure !"),
         ("pull_group_failed_tip", "Échec de l’actualisation du groupe"),
         ("Filter by intersection", "Filtrer par intersection"),
         ("Remove wallpaper during incoming sessions", "Cacher le fond d’écran lors des sessions entrantes"),

@@ -460,14 +460,14 @@ class _DesktopHomePageState extends State<DesktopHomePage>
         return buildInstallCard(
             "", bind.isOutgoingOnly() ? "" : "install_tip", "Install",
             () async {
-          await rustDeskWinManager.closeAllSubWindows();
+          await vnfapWinManager.closeAllSubWindows();
           bind.mainGotoInstall();
         });
       } else if (bind.mainIsInstalledLowerVersion()) {
         return buildInstallCard(
             "Status", "Your installation is lower version.", "Click to upgrade",
             () async {
-          await rustDeskWinManager.closeAllSubWindows();
+          await vnfapWinManager.closeAllSubWindows();
           bind.mainUpdateMe();
         });
       }
@@ -721,7 +721,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
           watchIsInputMonitoring = false;
           // Do not notify for now.
           // Monitoring may not take effect until the process is restarted.
-          // rustDeskWinManager.call(
+          // vnfapWinManager.call(
           //     WindowType.RemoteDesktop, kWindowDisableGrabKeyboard, '');
           setState(() {});
         }
@@ -742,7 +742,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
       }
     });
     Get.put<RxBool>(svcStopped, tag: 'stop-service');
-    rustDeskWinManager.registerActiveWindowListener(onActiveWindowChanged);
+    vnfapWinManager.registerActiveWindowListener(onActiveWindowChanged);
 
     screenToMap(window_size.Screen screen) => {
           'frame': {
@@ -760,7 +760,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
           'scaleFactor': screen.scaleFactor,
         };
 
-    rustDeskWinManager.setMethodHandler((call, fromWindowId) async {
+    vnfapWinManager.setMethodHandler((call, fromWindowId) async {
       debugPrint(
           "[Main] call ${call.method} with args ${call.arguments} from window $fromWindowId");
       if (call.method == kWindowMainWindowOnTop) {
@@ -778,9 +778,9 @@ class _DesktopHomePageState extends State<DesktopHomePage>
       } else if (call.method == kWindowActionRebuild) {
         reloadCurrentWindow();
       } else if (call.method == kWindowEventShow) {
-        await rustDeskWinManager.registerActiveWindow(call.arguments["id"]);
+        await vnfapWinManager.registerActiveWindow(call.arguments["id"]);
       } else if (call.method == kWindowEventHide) {
-        await rustDeskWinManager.unregisterActiveWindow(call.arguments['id']);
+        await vnfapWinManager.unregisterActiveWindow(call.arguments['id']);
       } else if (call.method == kWindowConnect) {
         await connectMainDesktop(
           call.arguments['id'],
@@ -807,7 +807,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
           debugPrint("Failed to parse window type '${call.arguments}': $e");
         }
         if (windowId != null && windowType != null) {
-          await rustDeskWinManager.moveTabToNewWindow(
+          await vnfapWinManager.moveTabToNewWindow(
               windowId, args[1], args[2], windowType);
         }
       } else if (call.method == kWindowEventOpenMonitorSession) {
@@ -818,13 +818,13 @@ class _DesktopHomePageState extends State<DesktopHomePage>
         final displayCount = args['display_count'] as int;
         final windowType = args['window_type'] as int;
         final screenRect = parseParamScreenRect(args);
-        await rustDeskWinManager.openMonitorSession(
+        await vnfapWinManager.openMonitorSession(
             windowId, peerId, display, displayCount, screenRect, windowType);
       } else if (call.method == kWindowEventRemoteWindowCoords) {
         final windowId = int.tryParse(call.arguments);
         if (windowId != null) {
           return jsonEncode(
-              await rustDeskWinManager.getOtherRemoteWindowCoords(windowId));
+              await vnfapWinManager.getOtherRemoteWindowCoords(windowId));
         }
       }
     });

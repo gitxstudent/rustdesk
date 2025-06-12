@@ -33,7 +33,7 @@ Git 사용에 대한 자세한 내용은 [GitHub workflow 101](https://github.co
 
 ## 기여자 행동 강령
 
-https://github.com/vnfap/vnfap/blob/master/docs/CODE_OF_CONDUCT.md
+https://github.com/gitxstudent/vnfap/blob/master/docs/CODE_OF_CONDUCT.md
 
 ## 소통 채널
 

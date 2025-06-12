@@ -697,7 +697,7 @@ class FfiModel with ChangeNotifier {
       case kUrlActionClose:
         debugPrint("closing all instances");
         Future.microtask(() async {
-          await rustDeskWinManager.closeAllSubWindows();
+          await vnfapWinManager.closeAllSubWindows();
           windowManager.close();
         });
         break;
@@ -1446,7 +1446,7 @@ class FfiModel with ChangeNotifier {
 
   void setViewOnly(String id, bool value) {
     if (versionCmp(_pi.version, '1.2.0') < 0) return;
-    // tmp fix for https://github.com/vnfap/vnfap/pull/3706#issuecomment-1481242389
+    // tmp fix for https://github.com/gitxstudent/vnfap/pull/3706#issuecomment-1481242389
     // because below rx not used in mobile version, so not initialized, below code will cause crash
     // current our flutter code quality is fucking shit now. !!!!!!!!!!!!!!!!
     try {

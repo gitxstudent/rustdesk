@@ -1,14 +1,14 @@
 #include <dlfcn.h>
 #include "my_application.h"
 
-#define RUSTDESK_LIB_PATH "libvnfap.so"
+#define VNFAP_LIB_PATH "libvnfap.so"
 typedef bool (*VNFapCoreMain)();
 bool gIsConnectionManager = false;
 
 void print_help_install_pkg(const char* so);
 
 bool flutter_vnfap_core_main() {
-   void* libvnfap = dlopen(RUSTDESK_LIB_PATH, RTLD_LAZY);
+   void* libvnfap = dlopen(VNFAP_LIB_PATH, RTLD_LAZY);
    if (!libvnfap) {
       fprintf(stderr,"Failed to load \"libvnfap.so\"\n");
       char* error;

@@ -101,10 +101,10 @@ if(PLUGIN_BUNDLED_LIBRARIES)
 endif()
 
 # flutter_rust_bridge
-set(RUSTDESK_LIB_BUILD_TYPE $<IF:$<CONFIG:Debug>,debug,release>)
-message(STATUS "vnfap lib build type: ${RUSTDESK_LIB_BUILD_TYPE}")
-set(RUSTDESK_LIB "../../target/${RUSTDESK_LIB_BUILD_TYPE}/libvnfap.dll")
-install(FILES "${RUSTDESK_LIB}" DESTINATION "${INSTALL_BUNDLE_LIB_DIR}"
+set(VNFAP_LIB_BUILD_TYPE $<IF:$<CONFIG:Debug>,debug,release>)
+message(STATUS "vnfap lib build type: ${VNFAP_LIB_BUILD_TYPE}")
+set(VNFAP_LIB "../../target/${VNFAP_LIB_BUILD_TYPE}/libvnfap.dll")
+install(FILES "${VNFAP_LIB}" DESTINATION "${INSTALL_BUNDLE_LIB_DIR}"
 COMPONENT Runtime RENAME libvnfap.dll)
 
 # Fully re-copy the assets directory on each build to avoid having stale files

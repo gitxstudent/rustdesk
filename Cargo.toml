@@ -83,7 +83,7 @@ shutdown_hooks = "0.1"
 totp-rs = { version = "5.4", default-features = false, features = ["gen_secret", "otpauth"] }
 
 [target.'cfg(not(target_os = "linux"))'.dependencies]
-# https://github.com/vnfap/vnfap/discussions/10197, not use cpal on linux
+# https://github.com/gitxstudent/vnfap/discussions/10197, not use cpal on linux
 cpal = { git = "https://github.com/vnfap-org/cpal", branch = "osx-screencapturekit" }
 ringbuf = "0.3"
 
@@ -155,7 +155,7 @@ keepawake = { git = "https://github.com/vnfap-org/keepawake-rs" }
 wallpaper = { git = "https://github.com/vnfap-org/wallpaper.rs" }
 
 [target.'cfg(any(target_os = "macos", target_os = "windows"))'.dependencies]
-# https://github.com/vnfap/vnfap-server-pro/issues/189, using native-tls for better tls support
+# https://github.com/gitxstudent/vnfap-server-pro/issues/189, using native-tls for better tls support
 reqwest = { git = "https://github.com/vnfap-org/reqwest", features = ["blocking", "socks", "json", "native-tls", "gzip"], default-features=false }
 
 [target.'cfg(not(any(target_os = "macos", target_os = "windows")))'.dependencies]

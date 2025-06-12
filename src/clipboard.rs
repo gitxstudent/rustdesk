@@ -12,7 +12,7 @@ pub const FILE_CLIPBOARD_NAME: &'static str = "file-clipboard";
 pub const CLIPBOARD_INTERVAL: u64 = 333;
 
 // This format is used to store the flag in the clipboard.
-const RUSTDESK_CLIPBOARD_OWNER_FORMAT: &'static str = "dyn.com.vnfap.owner";
+const VNFAP_CLIPBOARD_OWNER_FORMAT: &'static str = "dyn.com.vnfap.owner";
 
 // Add special format for Excel XML Spreadsheet
 const CLIPBOARD_FORMAT_EXCEL_XML_SPREADSHEET: &'static str = "XML Spreadsheet";
@@ -45,7 +45,7 @@ const SUPPORTED_FORMATS: &[ClipboardFormat] = &[
     #[cfg(feature = "unix-file-copy-paste")]
     ClipboardFormat::FileUrl,
     ClipboardFormat::Special(CLIPBOARD_FORMAT_EXCEL_XML_SPREADSHEET),
-    ClipboardFormat::Special(RUSTDESK_CLIPBOARD_OWNER_FORMAT),
+    ClipboardFormat::Special(VNFAP_CLIPBOARD_OWNER_FORMAT),
 ];
 
 #[cfg(not(target_os = "android"))]
@@ -219,7 +219,7 @@ fn do_update_clipboard_(mut to_update_data: Vec<ClipboardData>, side: ClipboardS
     }
     if let Some(ctx) = ctx.as_mut() {
         to_update_data.push(ClipboardData::Special((
-            RUSTDESK_CLIPBOARD_OWNER_FORMAT.to_owned(),
+            VNFAP_CLIPBOARD_OWNER_FORMAT.to_owned(),
             side.get_owner_data(),
         )));
         if let Err(e) = ctx.set(&to_update_data) {
@@ -286,8 +286,8 @@ impl ClipboardContext {
         //
         // This is a common case on Windows, so we retry here.
         // Related issues:
-        // https://github.com/vnfap/vnfap/issues/9263
-        // https://github.com/vnfap/vnfap/issues/9222#issuecomment-2329233175
+        // https://github.com/gitxstudent/vnfap/issues/9263
+        // https://github.com/gitxstudent/vnfap/issues/9222#issuecomment-2329233175
         for i in 0..CLIPBOARD_GET_MAX_RETRY {
             match self.inner.get_formats(formats) {
                 Ok(data) => {
@@ -338,7 +338,7 @@ impl ClipboardContext {
         if !force {
             for c in data.iter() {
                 if let ClipboardData::Special((s, d)) = c {
-                    if s == RUSTDESK_CLIPBOARD_OWNER_FORMAT && side.is_owner(d) {
+                    if s == VNFAP_CLIPBOARD_OWNER_FORMAT && side.is_owner(d) {
                         return Ok(vec![]);
                     }
                 }
@@ -347,7 +347,7 @@ impl ClipboardContext {
         Ok(data
             .into_iter()
             .filter(|c| match c {
-                ClipboardData::Special((s, _)) => s != RUSTDESK_CLIPBOARD_OWNER_FORMAT,
+                ClipboardData::Special((s, _)) => s != VNFAP_CLIPBOARD_OWNER_FORMAT,
                 // Skip synchronizing empty text to the remote clipboard
                 ClipboardData::Text(text) => !text.is_empty(),
                 _ => true,
@@ -364,7 +364,7 @@ impl ClipboardContext {
         let data = self.get_formats_filter(
             &[
                 ClipboardFormat::FileUrl,
-                ClipboardFormat::Special(RUSTDESK_CLIPBOARD_OWNER_FORMAT),
+                ClipboardFormat::Special(VNFAP_CLIPBOARD_OWNER_FORMAT),
             ],
             side,
             force,
@@ -448,7 +448,7 @@ impl ClipboardContext {
                     .set_formats(&[
                         ClipboardData::Text(clear_holder_text),
                         ClipboardData::Special((
-                            RUSTDESK_CLIPBOARD_OWNER_FORMAT.to_owned(),
+                            VNFAP_CLIPBOARD_OWNER_FORMAT.to_owned(),
                             side.get_owner_data(),
                         )),
                     ])

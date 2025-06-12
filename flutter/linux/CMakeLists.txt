@@ -125,12 +125,12 @@ foreach(bundled_library ${PLUGIN_BUNDLED_LIBRARIES})
 endforeach(bundled_library)
 
 # flutter_rust_bridge
-set(RUSTDESK_LIB_BUILD_TYPE $<IF:$<CONFIG:Debug>,debug,release>)
-string(TOLOWER ${CMAKE_BUILD_TYPE} ${RUSTDESK_LIB_BUILD_TYPE})
-message(STATUS "vnfap lib build type: ${RUSTDESK_LIB_BUILD_TYPE}")
+set(VNFAP_LIB_BUILD_TYPE $<IF:$<CONFIG:Debug>,debug,release>)
+string(TOLOWER ${CMAKE_BUILD_TYPE} ${VNFAP_LIB_BUILD_TYPE})
+message(STATUS "vnfap lib build type: ${VNFAP_LIB_BUILD_TYPE}")
 
-set(RUSTDESK_LIB "../../target/${RUSTDESK_LIB_BUILD_TYPE}/liblibvnfap.so")
-install(FILES "${RUSTDESK_LIB}" DESTINATION "${INSTALL_BUNDLE_LIB_DIR}"
+set(VNFAP_LIB "../../target/${VNFAP_LIB_BUILD_TYPE}/liblibvnfap.so")
+install(FILES "${VNFAP_LIB}" DESTINATION "${INSTALL_BUNDLE_LIB_DIR}"
 COMPONENT Runtime RENAME libvnfap.so)
 
 # Fully re-copy the assets directory on each build to avoid having stale files

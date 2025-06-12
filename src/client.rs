@@ -3302,7 +3302,7 @@ pub trait Interface: Send + Clone + 'static + Sized {
             && ((cfg!(windows) && (errno == 10054 || err.contains("10054")))
                 || (!cfg!(windows) && (errno == 104 || err.contains("104")))
                 || (!err.contains("Failed") && err.contains("deadline")))
-        // deadline: https://github.com/vnfap/vnfap-server-pro/discussions/325, most likely comes from secure tcp timeout
+        // deadline: https://github.com/gitxstudent/vnfap-server-pro/discussions/325, most likely comes from secure tcp timeout
         {
             relay_hint = true;
             if !received {

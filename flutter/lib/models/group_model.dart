@@ -182,14 +182,7 @@ class GroupModel {
         Map<String, dynamic> json =
             _jsonDecodeResp(utf8.decode(resp.bodyBytes), resp.statusCode);
         if (json.containsKey('error')) {
-          if (json['error'] == 'Admin required!' ||
-              json['error']
-                  .toString()
-                  .contains('ambiguous column name: status')) {
-            throw translate('upgrade_vnfap_server_pro_to_{1.1.10}_tip');
-          } else {
-            throw json['error'];
-          }
+          throw json['error'];
         }
         if (resp.statusCode != 200) {
           throw 'HTTP ${resp.statusCode}';
