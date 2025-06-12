@@ -58,29 +58,29 @@ fn main() {
     use hbb_common::{config::LocalConfig, env_logger::*};
     init_from_env(Env::default().filter_or(DEFAULT_FILTER_ENV, "info"));
     if let Some(p) = matches.value_of("port-forward") {
-        let options: Vec<String> = p.split(":").map(|x| x.to_owned()).collect();
+        let options: Vec<String> = p.split(":").map(str::to_owned).collect();
         if options.len() < 3 {
             log::error!("Wrong port-forward options");
             return;
         }
-        let mut port = 0;
-        if let Ok(v) = options[1].parse::<i32>() {
-            port = v;
-        } else {
-            log::error!("Wrong local-port");
-            return;
-        }
-        let mut remote_port = 0;
-        if let Ok(v) = options[2].parse::<i32>() {
-            remote_port = v;
-        } else {
-            log::error!("Wrong remote-port");
-            return;
-        }
-        let mut remote_host = "localhost".to_owned();
-        if options.len() > 3 {
-            remote_host = options[3].clone();
-        }
+        let port: i32 = match options[1].parse() {
+            Ok(v) => v,
+            Err(_) => {
+                log::error!("Wrong local-port");
+                return;
+            }
+        };
+        let remote_port: i32 = match options[2].parse() {
+            Ok(v) => v,
+            Err(_) => {
+                log::error!("Wrong remote-port");
+                return;
+            }
+        };
+        let remote_host = options
+            .get(3)
+            .cloned()
+            .unwrap_or_else(|| "localhost".into());
         common::test_rendezvous_server();
         common::test_nat_type();
         let key = matches.value_of("key").unwrap_or("").to_owned();
