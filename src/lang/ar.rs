@@ -545,7 +545,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("auto_disconnect_option_tip", "سيتم قطع الاتصال تلقائيًا إذا تم تجاوز المهلة."),
         ("Connection failed due to inactivity", "فشل الاتصال بسبب عدم النشاط"),
         ("Check for software update on startup", "البحث عن تحديثات البرنامج عند بدء التشغيل"),
-        ("upgrade_vnfap_server_pro_to_{}_tip", "ترقية خادم VNFap Pro إلى {}"),
         ("pull_group_failed_tip", "فشل سحب المجموعة"),
         ("Filter by intersection", "تصفية حسب التقاطع"),
         ("Remove wallpaper during incoming sessions", "إزالة الخلفية أثناء الجلسات الواردة"),
