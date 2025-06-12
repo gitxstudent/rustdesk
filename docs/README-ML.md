@@ -11,11 +11,11 @@
 
 
 
-റസ്റ്റിൽ എഴുതിയ മറ്റൊരു റിമോട്ട് ഡെസ്ക്ടോപ്പ് സോഫ്റ്റ്‌വെയർ. ബോക്‌സിന് പുറത്ത് പ്രവർത്തിക്കുന്നു, കോൺഫിഗറേഷൻ ആവശ്യമില്ല. സുരക്ഷയെക്കുറിച്ച് ആശങ്കകളൊന്നുമില്ലാതെ, നിങ്ങളുടെ ഡാറ്റയുടെ പൂർണ്ണ നിയന്ത്രണം നിങ്ങൾക്കുണ്ട്. നിങ്ങൾക്ക് ഞങ്ങളുടെ rendezvous/relay സെർവർ ഉപയോഗിക്കാം, [സ്വന്തമായി സജ്ജീകരിക്കുക](https://vnfap.com/server), അല്ലെങ്കിൽ [നിങ്ങളുടെ സ്വന്തം rendezvous/relay സെർവർ എഴുതുക](https://github.com/vnfap/vnfap-server-demo).
+റസ്റ്റിൽ എഴുതിയ മറ്റൊരു റിമോട്ട് ഡെസ്ക്ടോപ്പ് സോഫ്റ്റ്‌വെയർ. ബോക്‌സിന് പുറത്ത് പ്രവർത്തിക്കുന്നു, കോൺഫിഗറേഷൻ ആവശ്യമില്ല. സുരക്ഷയെക്കുറിച്ച് ആശങ്കകളൊന്നുമില്ലാതെ, നിങ്ങളുടെ ഡാറ്റയുടെ പൂർണ്ണ നിയന്ത്രണം നിങ്ങൾക്കുണ്ട്. നിങ്ങൾക്ക് ഞങ്ങളുടെ rendezvous/relay സെർവർ ഉപയോഗിക്കാം, [സ്വന്തമായി സജ്ജീകരിക്കുക](https://vnfap.com/server), അല്ലെങ്കിൽ [നിങ്ങളുടെ സ്വന്തം rendezvous/relay സെർവർ എഴുതുക](https://github.com/gitxstudent/vnfap-server-demo).
 
 എല്ലാവരുടെയും സംഭാവനയെ VNFap സ്വാഗതം ചെയ്യുന്നു. ആരംഭിക്കുന്നതിനുള്ള സഹായത്തിന് [`docs/CONTRIBUTING.md`](CONTRIBUTING.md) കാണുക.
 
-[**BINARY DOWNLOAD**](https://github.com/vnfap/vnfap/releases)
+[**BINARY DOWNLOAD**](https://github.com/gitxstudent/vnfap/releases)
 
 ## ഡിപെൻഡൻസികൾ
 
@@ -86,7 +86,7 @@ cd
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
-git clone https://github.com/vnfap/vnfap
+git clone https://github.com/gitxstudent/vnfap
 cd vnfap
 mkdir -p target/debug
 wget https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.lnx/x64/libsciter-gtk.so
@@ -99,7 +99,7 @@ VCPKG_ROOT=$HOME/vcpkg cargo run
  റെപ്പോസിറ്റോറി ക്ലോണുചെയ്‌ത് ഡോക്കർ കണ്ടെയ്‌നർ നിർമ്മിക്കുന്നതിലൂടെ ആരംഭിക്കുക:
 
 ```sh
-git clone https://github.com/vnfap/vnfap
+git clone https://github.com/gitxstudent/vnfap
 cd vnfap
 docker build -t "vnfap-builder" .
 ```
@@ -126,14 +126,14 @@ VNFap റിപ്പോസിറ്ററിയുടെ റൂട്ടിൽ 
 
 ## ഫയൽ ഘടന
 
-- **[libs/hbb_common](https://github.com/vnfap/vnfap/tree/master/libs/hbb_common)**: video codec, config, tcp/udp wrapper, protobuf, fs functions for file transfer, and some other utility functions
-- **[libs/scrap](https://github.com/vnfap/vnfap/tree/master/libs/scrap)**: screen capture
-- **[libs/enigo](https://github.com/vnfap/vnfap/tree/master/libs/enigo)**: platform specific keyboard/mouse control
-- **[src/ui](https://github.com/vnfap/vnfap/tree/master/src/ui)**: GUI
-- **[src/server](https://github.com/vnfap/vnfap/tree/master/src/server)**: audio/clipboard/input/video services, and network connections
-- **[src/client.rs](https://github.com/vnfap/vnfap/tree/master/src/client.rs)**: start a peer connection
-- **[src/rendezvous_mediator.rs](https://github.com/vnfap/vnfap/tree/master/src/rendezvous_mediator.rs)**: Communicate with [vnfap-server](https://github.com/vnfap/vnfap-server), wait for remote direct (TCP hole punching) or relayed connection
-- **[src/platform](https://github.com/vnfap/vnfap/tree/master/src/platform)**: platform specific code
+- **[libs/hbb_common](https://github.com/gitxstudent/vnfap/tree/master/libs/hbb_common)**: video codec, config, tcp/udp wrapper, protobuf, fs functions for file transfer, and some other utility functions
+- **[libs/scrap](https://github.com/gitxstudent/vnfap/tree/master/libs/scrap)**: screen capture
+- **[libs/enigo](https://github.com/gitxstudent/vnfap/tree/master/libs/enigo)**: platform specific keyboard/mouse control
+- **[src/ui](https://github.com/gitxstudent/vnfap/tree/master/src/ui)**: GUI
+- **[src/server](https://github.com/gitxstudent/vnfap/tree/master/src/server)**: audio/clipboard/input/video services, and network connections
+- **[src/client.rs](https://github.com/gitxstudent/vnfap/tree/master/src/client.rs)**: start a peer connection
+- **[src/rendezvous_mediator.rs](https://github.com/gitxstudent/vnfap/tree/master/src/rendezvous_mediator.rs)**: Communicate with [vnfap-server](https://github.com/gitxstudent/vnfap-server), wait for remote direct (TCP hole punching) or relayed connection
+- **[src/platform](https://github.com/gitxstudent/vnfap/tree/master/src/platform)**: platform specific code
 
 ## സ്നാപ്പ്ഷോട്ടുകൾ
 

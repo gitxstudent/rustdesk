@@ -43,7 +43,7 @@ Spezifische Git-Anweisungen finden Sie im [GitHub-Workflow](https://github.com/s
 
 ## Verhalten
 
-https://github.com/vnfap/vnfap/blob/master/docs/CODE_OF_CONDUCT.md
+https://github.com/gitxstudent/vnfap/blob/master/docs/CODE_OF_CONDUCT.md
 
 ## Kommunikation
 

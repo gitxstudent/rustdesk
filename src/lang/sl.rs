@@ -545,7 +545,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("auto_disconnect_option_tip", "Samodejno prekini neaktivne seje"),
         ("Connection failed due to inactivity", "Povezava je bila prekinjena zaradi neaktivnosti"),
         ("Check for software update on startup", "Preveri za posodobitve ob zagonu"),
-        ("upgrade_vnfap_server_pro_to_{}_tip", "Prosimo, nadgradite VNFap Server Pro na različico {} ali novejšo."),
+        ("upgrade_vnfap_server_pro_to_{}_tip", "Prosimo, nadgradite VNFap Server na različico {} ali novejšo."),
         ("pull_group_failed_tip", "Osveževanje skupine ni uspelo"),
         ("Filter by intersection", "Filtriraj po preseku"),
         ("Remove wallpaper during incoming sessions", "Odstrani sliko ozadja ob dohodnih povezavah"),

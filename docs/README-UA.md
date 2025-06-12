@@ -6,22 +6,22 @@
   <a href="#структура-файлів">Структура</a> •
   <a href="#знімки-екрана">Знімки екрана</a><br>
   [<a href="../README.md">English</a>] | [<a href="README-CS.md">česky</a>] | [<a href="README-ZH.md">中文</a>] | [<a href="README-HU.md">Magyar</a>] | [<a href="README-ES.md">Español</a>] | [<a href="README-FA.md">فارسی</a>] | [<a href="README-FR.md">Français</a>] | [<a href="README-DE.md">Deutsch</a>] | [<a href="README-PL.md">Polski</a>] | [<a href="README-ID.md">Indonesian</a>] | [<a href="README-FI.md">Suomi</a>] | [<a href="README-ML.md">മലയാളം</a>] | [<a href="README-JP.md">日本語</a>] | [<a href="README-NL.md">Nederlands</a>] | [<a href="README-IT.md">Italiano</a>] | [<a href="README-RU.md">Русский</a>] | [<a href="README-PTBR.md">Português (Brasil)</a>] | [<a href="README-EO.md">Esperanto</a>] | [<a href="README-KR.md">한국어</a>] | [<a href="README-AR.md">العربي</a>] | [<a href="README-VN.md">Tiếng Việt</a>] | [<a href="README-DA.md">Dansk</a>] | [<a href="README-GR.md">Ελληνικά</a>] | [<a href="README-TR.md">Türkçe</a>]<br>
-  <b>Нам потрібна ваша допомога для перекладу цього README, <a href="https://github.com/vnfap/vnfap/tree/master/src/lang">інтерфейсу</a> та <a href="https://github.com/vnfap/doc.vnfap.com">документації</a> VNFap вашою рідною мовою</B>
+  <b>Нам потрібна ваша допомога для перекладу цього README, <a href="https://github.com/gitxstudent/vnfap/tree/master/src/lang">інтерфейсу</a> та <a href="https://github.com/vnfap/doc.vnfap.com">документації</a> VNFap вашою рідною мовою</B>
 </p>
 
 
 
-Ще один застосунок для віддаленого керування стільницею, написаний на Rust. Працює з коробки, не потребує налаштування. Ви повністю контролюєте свої дані, не турбуючись про безпеку. Ви можете використовувати наш сервер ретрансляції, [налаштувати свій власний](https://vnfap.com/server), або [написати свій власний сервер ретрансляції](https://github.com/vnfap/vnfap-server-demo).
+Ще один застосунок для віддаленого керування стільницею, написаний на Rust. Працює з коробки, не потребує налаштування. Ви повністю контролюєте свої дані, не турбуючись про безпеку. Ви можете використовувати наш сервер ретрансляції, [налаштувати свій власний](https://vnfap.com/server), або [написати свій власний сервер ретрансляції](https://github.com/gitxstudent/vnfap-server-demo).
 
 ![image](https://user-images.githubusercontent.com/71636191/171661982-430285f0-2e12-4b1d-9957-4a58e375304d.png)
 
 VNFap вітає внесок кожного. Ознайомтеся з [CONTRIBUTING.md](docs/CONTRIBUTING.md), щоб отримати допомогу на початковому етапі.
 
-[**ЧаПи**](https://github.com/vnfap/vnfap/wiki/FAQ)
+[**ЧаПи**](https://github.com/gitxstudent/vnfap/wiki/FAQ)
 
-[**ЗАВАНТАЖЕННЯ ЗАСТОСУНКУ**](https://github.com/vnfap/vnfap/releases)
+[**ЗАВАНТАЖЕННЯ ЗАСТОСУНКУ**](https://github.com/gitxstudent/vnfap/releases)
 
-[**НІЧНІ ЗБІРКИ**](https://github.com/vnfap/vnfap/releases/tag/nightly)
+[**НІЧНІ ЗБІРКИ**](https://github.com/gitxstudent/vnfap/releases/tag/nightly)
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="Get it on F-Droid"
@@ -29,7 +29,7 @@ VNFap вітає внесок кожного. Ознайомтеся з [CONTRIB
 
 ## Залежності
 
-Стільничні версії використовують Flutter чи Sciter (застаріле) для графічного інтерфейсу. Ця інструкція лише для Sciter, оскільки він є більш простим та дружнім для початківців. Перегляньте [CI](https://github.com/vnfap/vnfap/blob/master/.github/workflows/flutter-build.yml) для збірки версії на Flutter.
+Стільничні версії використовують Flutter чи Sciter (застаріле) для графічного інтерфейсу. Ця інструкція лише для Sciter, оскільки він є більш простим та дружнім для початківців. Перегляньте [CI](https://github.com/gitxstudent/vnfap/blob/master/.github/workflows/flutter-build.yml) для збірки версії на Flutter.
 
 Будь ласка, завантажте динамічну бібліотеку Sciter самостійно.
 
@@ -108,7 +108,7 @@ cd
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
-git clone https://github.com/vnfap/vnfap
+git clone https://github.com/gitxstudent/vnfap
 cd vnfap
 mkdir -p target/debug
 wget https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.lnx/x64/libsciter-gtk.so
@@ -121,7 +121,7 @@ VCPKG_ROOT=$HOME/vcpkg cargo run
 Почніть з клонування сховища та створення docker-контейнера:
 
 ```sh
-git clone https://github.com/vnfap/vnfap
+git clone https://github.com/gitxstudent/vnfap
 cd vnfap
 docker build -t "vnfap-builder" .
 ```
@@ -148,25 +148,25 @@ target/release/vnfap
 
 ## Структура файлів
 
-- **[libs/hbb_common](https://github.com/vnfap/vnfap/tree/master/libs/hbb_common)**: відеокодек, конфіг, обгортка tcp/udp, protobuf, функції fs для передавання файлів і деякі інші службові функції
-- **[libs/scrap](https://github.com/vnfap/vnfap/tree/master/libs/scrap)**: захоплення екрана
-- **[libs/enigo](https://github.com/vnfap/vnfap/tree/master/libs/enigo)**: специфічне для платформи керування клавіатурою/мишею
-- **[libs/clipboard](https://github.com/vnfap/vnfap/tree/master/libs/clipboard)**: реалізація копіювання та вставлення файлів для Windows, Linux, macOS.
-- **[src/ui](https://github.com/vnfap/vnfap/tree/master/src/ui)**: графічний інтерфейс користувача
-- **[src/server](https://github.com/vnfap/vnfap/tree/master/src/server)**: сервіси аудіо/буфера обміну/вводу/відео та мережевих підключень
-- **[src/client.rs](https://github.com/vnfap/vnfap/tree/master/src/client.rs)**: однорангове зʼєднання
-- **[src/rendezvous_mediator.rs](https://github.com/vnfap/vnfap/tree/master/src/rendezvous_mediator.rs)**: комунікація з [vnfap-server](https://github.com/vnfap/vnfap-server), очікування віддаленого прямого (обхід TCP NAT) або ретрансльованого зʼєднання
-- **[src/platform](https://github.com/vnfap/vnfap/tree/master/src/platform)**: специфічний для платформи код
-- **[flutter](https://github.com/vnfap/vnfap/tree/master/flutter)**: код Flutter для мобільних пристроїв 
-- **[flutter/web/js](https://github.com/vnfap/vnfap/tree/master/flutter/web/js)**: JavaScript для веб клієнта на Flutter
+- **[libs/hbb_common](https://github.com/gitxstudent/vnfap/tree/master/libs/hbb_common)**: відеокодек, конфіг, обгортка tcp/udp, protobuf, функції fs для передавання файлів і деякі інші службові функції
+- **[libs/scrap](https://github.com/gitxstudent/vnfap/tree/master/libs/scrap)**: захоплення екрана
+- **[libs/enigo](https://github.com/gitxstudent/vnfap/tree/master/libs/enigo)**: специфічне для платформи керування клавіатурою/мишею
+- **[libs/clipboard](https://github.com/gitxstudent/vnfap/tree/master/libs/clipboard)**: реалізація копіювання та вставлення файлів для Windows, Linux, macOS.
+- **[src/ui](https://github.com/gitxstudent/vnfap/tree/master/src/ui)**: графічний інтерфейс користувача
+- **[src/server](https://github.com/gitxstudent/vnfap/tree/master/src/server)**: сервіси аудіо/буфера обміну/вводу/відео та мережевих підключень
+- **[src/client.rs](https://github.com/gitxstudent/vnfap/tree/master/src/client.rs)**: однорангове зʼєднання
+- **[src/rendezvous_mediator.rs](https://github.com/gitxstudent/vnfap/tree/master/src/rendezvous_mediator.rs)**: комунікація з [vnfap-server](https://github.com/gitxstudent/vnfap-server), очікування віддаленого прямого (обхід TCP NAT) або ретрансльованого зʼєднання
+- **[src/platform](https://github.com/gitxstudent/vnfap/tree/master/src/platform)**: специфічний для платформи код
+- **[flutter](https://github.com/gitxstudent/vnfap/tree/master/flutter)**: код Flutter для мобільних пристроїв 
+- **[flutter/web/js](https://github.com/gitxstudent/vnfap/tree/master/flutter/web/js)**: JavaScript для веб клієнта на Flutter
 
 ## Знімки екрана
 
-![Менеджер зʼєднань](https://github.com/vnfap/vnfap/assets/28412477/db82d4e7-c4bc-4823-8e6f-6af7eadf7651)
+![Менеджер зʼєднань](https://github.com/gitxstudent/vnfap/assets/28412477/db82d4e7-c4bc-4823-8e6f-6af7eadf7651)
 
-![Підключення до ПК з Windows](https://github.com/vnfap/vnfap/assets/28412477/9baa91e9-3362-4d06-aa1a-7518edcbd7ea)
+![Підключення до ПК з Windows](https://github.com/gitxstudent/vnfap/assets/28412477/9baa91e9-3362-4d06-aa1a-7518edcbd7ea)
 
-![Передача файлів](https://github.com/vnfap/vnfap/assets/28412477/39511ad3-aa9a-4f8c-8947-1cce286a46ad)
+![Передача файлів](https://github.com/gitxstudent/vnfap/assets/28412477/39511ad3-aa9a-4f8c-8947-1cce286a46ad)
 
-![Тунелювання TCP](https://github.com/vnfap/vnfap/assets/28412477/78e8708f-e87e-4570-8373-1360033ea6c5)
+![Тунелювання TCP](https://github.com/gitxstudent/vnfap/assets/28412477/78e8708f-e87e-4570-8373-1360033ea6c5)
 

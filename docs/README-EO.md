@@ -6,16 +6,16 @@
   <a href="#dosierstrukturo">Strukturo</a> •
   <a href="#ekrankopio">Ekrankopio</a><br>
   [<a href="../README.md">English</a>] | [<a href="README-UA.md">Українська</a>] | [<a href="README-CS.md">česky</a>] | [<a href="README-ZH.md">中文</a>] | [<a href="README-HU.md">Magyar</a>] | [<a href="README-ES.md">Español</a>] | [<a href="README-FA.md">فارسی</a>] | [<a href="README-FR.md">Français</a>] | [<a href="README-DE.md">Deutsch</a>] | [<a href="README-PL.md">Polski</a>] | [<a href="README-ID.md">Indonesian</a>] | [<a href="README-FI.md">Suomi</a>] | [<a href="README-ML.md">മലയാളം</a>] | [<a href="README-JP.md">日本語</a>] | [<a href="README-NL.md">Nederlands</a>] | [<a href="README-IT.md">Italiano</a>] | [<a href="README-RU.md">Русский</a>] | [<a href="README-PTBR.md">Português (Brasil)</a>] | [<a href="README-KR.md">한국어</a>] | [<a href="README-AR.md">العربي</a>] | [<a href="README-VN.md">Tiếng Việt</a>] | [<a href="README-GR.md">Ελληνικά</a>]<br>
-  <b>Ni bezonas helpon traduki tiun README kaj <a href="https://github.com/vnfap/vnfap/tree/master/src/lang">la interfacon</a> al via denaska lingvo</b>
+  <b>Ni bezonas helpon traduki tiun README kaj <a href="https://github.com/gitxstudent/vnfap/tree/master/src/lang">la interfacon</a> al via denaska lingvo</b>
 </p>
 
 
 
-Denove alia fora labortabla programo, skribita en Rust. Ĝi funkcias elskatole, ne bezonas konfiguraĵon. Vi havas la tutan kontrolon sur viaj datumoj, sen zorgo pri sekureco. Vi povas uzi nian servilon rendezvous/relajsan, [agordi vian propran](https://vnfap.com/server), aŭ [skribi vian propran servilon rendezvous/relajsan](https://github.com/vnfap/vnfap-server-demo).
+Denove alia fora labortabla programo, skribita en Rust. Ĝi funkcias elskatole, ne bezonas konfiguraĵon. Vi havas la tutan kontrolon sur viaj datumoj, sen zorgo pri sekureco. Vi povas uzi nian servilon rendezvous/relajsan, [agordi vian propran](https://vnfap.com/server), aŭ [skribi vian propran servilon rendezvous/relajsan](https://github.com/gitxstudent/vnfap-server-demo).
 
 VNFap bonvenigas kontribuon de ĉiuj. Vidu [`docs/CONTRIBUTING.md`](CONTRIBUTING.md) por helpo komenci.
 
-[**BINARA ELŜUTO**](https://github.com/vnfap/vnfap/releases)
+[**BINARA ELŜUTO**](https://github.com/gitxstudent/vnfap/releases)
 
 ## Dependantaĵoj
 
@@ -86,7 +86,7 @@ cd
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
-git clone https://github.com/vnfap/vnfap
+git clone https://github.com/gitxstudent/vnfap
 cd vnfap
 mkdir -p target/debug
 wget https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.lnx/x64/libsciter-gtk.so
@@ -99,7 +99,7 @@ VCPKG_ROOT=$HOME/vcpkg cargo run
 Komencu klonante la deponejon kaj kompilu la konteneron Docker:
 
 ```sh
-git clone https://github.com/vnfap/vnfap
+git clone https://github.com/gitxstudent/vnfap
 cd vnfap
 docker build -t "vnfap-builder" .
 ```
@@ -126,14 +126,14 @@ Bonvolu certigi, ke vi plenumas tiujn komandojn el la radiko de la deponejo VNFa
 
 ## Dosierstrukturo
 
-- **[libs/hbb_common](https://github.com/vnfap/vnfap/tree/master/libs/hbb_common)**: videa kodeko, agordado, kovrilo tcp/udp, protobuf, funkcioj fs por dosiertransigo, kaj aliaj utilaĵaj funkcioj
-- **[libs/scrap](https://github.com/vnfap/vnfap/tree/master/libs/scrap)**: ekrankaptado
-- **[libs/enigo](https://github.com/vnfap/vnfap/tree/master/libs/enigo)**: operaciumspecifa kontrolo de klavaro/muso
-- **[src/ui](https://github.com/vnfap/vnfap/tree/master/src/ui)**: interfaco
-- **[src/server](https://github.com/vnfap/vnfap/tree/master/src/server)**: aŭdio/poŝo/enigo/videa servoj, kaj retkonektoj
-- **[src/client.rs](https://github.com/vnfap/vnfap/tree/master/src/client.rs)**: starti konekto kun samtavolo
-- **[src/rendezvous_mediator.rs](https://github.com/vnfap/vnfap/tree/master/src/rendezvous_mediator.rs)**: komuniki kun [vnfap-server](https://github.com/vnfap/vnfap-server), atendi foran direktan (TCP hole punching) aŭ relajsatan konekton
-- **[src/platform](https://github.com/vnfap/vnfap/tree/master/src/platform)**: operaciumspecifa kodo
+- **[libs/hbb_common](https://github.com/gitxstudent/vnfap/tree/master/libs/hbb_common)**: videa kodeko, agordado, kovrilo tcp/udp, protobuf, funkcioj fs por dosiertransigo, kaj aliaj utilaĵaj funkcioj
+- **[libs/scrap](https://github.com/gitxstudent/vnfap/tree/master/libs/scrap)**: ekrankaptado
+- **[libs/enigo](https://github.com/gitxstudent/vnfap/tree/master/libs/enigo)**: operaciumspecifa kontrolo de klavaro/muso
+- **[src/ui](https://github.com/gitxstudent/vnfap/tree/master/src/ui)**: interfaco
+- **[src/server](https://github.com/gitxstudent/vnfap/tree/master/src/server)**: aŭdio/poŝo/enigo/videa servoj, kaj retkonektoj
+- **[src/client.rs](https://github.com/gitxstudent/vnfap/tree/master/src/client.rs)**: starti konekto kun samtavolo
+- **[src/rendezvous_mediator.rs](https://github.com/gitxstudent/vnfap/tree/master/src/rendezvous_mediator.rs)**: komuniki kun [vnfap-server](https://github.com/gitxstudent/vnfap-server), atendi foran direktan (TCP hole punching) aŭ relajsatan konekton
+- **[src/platform](https://github.com/gitxstudent/vnfap/tree/master/src/platform)**: operaciumspecifa kodo
 
 ## Ekrankopio
 

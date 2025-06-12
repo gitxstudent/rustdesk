@@ -11,11 +11,11 @@
 
 
 
-Vielä yksi etätyöpöytäohjelmisto, ohjelmoitu Rust-kielellä. Toimii suoraan pakkauksesta, ei tarvitse asetusta. Hallitset täysin tietojasi, ei tarvitse murehtia turvallisuutta. Voit käyttää meidän rendezvous/relay-palvelinta, [aseta omasi](https://vnfap.com/server), tai [kirjoittaa oma rendezvous/relay-palvelin](https://github.com/vnfap/vnfap-server-demo).
+Vielä yksi etätyöpöytäohjelmisto, ohjelmoitu Rust-kielellä. Toimii suoraan pakkauksesta, ei tarvitse asetusta. Hallitset täysin tietojasi, ei tarvitse murehtia turvallisuutta. Voit käyttää meidän rendezvous/relay-palvelinta, [aseta omasi](https://vnfap.com/server), tai [kirjoittaa oma rendezvous/relay-palvelin](https://github.com/gitxstudent/vnfap-server-demo).
 
 VNFap toivottaa avustukset tervetulleiksi kaikilta. Katso lisätietoja [`docs/CONTRIBUTING.md`](CONTRIBUTING.md) avun saamiseksi.
 
-[**BINAARILATAUS**](https://github.com/vnfap/vnfap/releases)
+[**BINAARILATAUS**](https://github.com/gitxstudent/vnfap/releases)
 
 ## Riippuvuudet
 
@@ -86,7 +86,7 @@ cd
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
-git clone https://github.com/vnfap/vnfap
+git clone https://github.com/gitxstudent/vnfap
 cd vnfap
 mkdir -p target/debug
 wget https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.lnx/x64/libsciter-gtk.so
@@ -99,7 +99,7 @@ VCPKG_ROOT=$HOME/vcpkg cargo run
 Aloita kloonaamalla tietovarasto ja rakentamalla docker-säiliö:
 
 ```sh
-git clone https://github.com/vnfap/vnfap
+git clone https://github.com/gitxstudent/vnfap
 cd vnfap
 docker build -t "vnfap-builder" .
 ```
@@ -126,14 +126,14 @@ Varmista, että suoritat näitä komentoja VNFaptop-tietovaraston juurihakemisto
 
 ## Tiedostorakenne
 
-- **[libs/hbb_common](https://github.com/vnfap/vnfap/tree/master/libs/hbb_common)**: video codec, config, tcp/udp wrapper, protobuf, fs-funktiot tiedostosiirtoon, ja jotkut muut apuohjelmafunktiot
-- **[libs/scrap](https://github.com/vnfap/vnfap/tree/master/libs/scrap)**: näyttökaappaukset
-- **[libs/enigo](https://github.com/vnfap/vnfap/tree/master/libs/enigo)**: platform specific keyboard/mouse control
-- **[src/ui](https://github.com/vnfap/vnfap/tree/master/src/ui)**: Graafinen käyttöliittymä
-- **[src/server](https://github.com/vnfap/vnfap/tree/master/src/server)**: audio/clipboard/input/video services, and network connections
-- **[src/client.rs](https://github.com/vnfap/vnfap/tree/master/src/client.rs)**: start a peer connection
-- **[src/rendezvous_mediator.rs](https://github.com/vnfap/vnfap/tree/master/src/rendezvous_mediator.rs)**: Communicate with [vnfap-server](https://github.com/vnfap/vnfap-server), wait for remote direct (TCP hole punching) or relayed connection
-- **[src/platform](https://github.com/vnfap/vnfap/tree/master/src/platform)**: platform specific code
+- **[libs/hbb_common](https://github.com/gitxstudent/vnfap/tree/master/libs/hbb_common)**: video codec, config, tcp/udp wrapper, protobuf, fs-funktiot tiedostosiirtoon, ja jotkut muut apuohjelmafunktiot
+- **[libs/scrap](https://github.com/gitxstudent/vnfap/tree/master/libs/scrap)**: näyttökaappaukset
+- **[libs/enigo](https://github.com/gitxstudent/vnfap/tree/master/libs/enigo)**: platform specific keyboard/mouse control
+- **[src/ui](https://github.com/gitxstudent/vnfap/tree/master/src/ui)**: Graafinen käyttöliittymä
+- **[src/server](https://github.com/gitxstudent/vnfap/tree/master/src/server)**: audio/clipboard/input/video services, and network connections
+- **[src/client.rs](https://github.com/gitxstudent/vnfap/tree/master/src/client.rs)**: start a peer connection
+- **[src/rendezvous_mediator.rs](https://github.com/gitxstudent/vnfap/tree/master/src/rendezvous_mediator.rs)**: Communicate with [vnfap-server](https://github.com/gitxstudent/vnfap-server), wait for remote direct (TCP hole punching) or relayed connection
+- **[src/platform](https://github.com/gitxstudent/vnfap/tree/master/src/platform)**: platform specific code
 
 ## Tilannekuvat
 

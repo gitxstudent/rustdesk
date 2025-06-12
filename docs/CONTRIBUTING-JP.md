@@ -34,7 +34,7 @@ VNFap またはその依存関係へのコントリビュートは、GitHub の�
 
 ## 行動規範
 
-https://github.com/vnfap/vnfap/blob/master/docs/CODE_OF_CONDUCT.md
+https://github.com/gitxstudent/vnfap/blob/master/docs/CODE_OF_CONDUCT.md
 
 ## コミュニケーション
 

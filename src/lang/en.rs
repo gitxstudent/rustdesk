@@ -194,7 +194,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("scam_text2", "They are likely a scammer trying to steal your money or other private information."),
         ("auto_disconnect_option_tip", "Automatically close incoming sessions on user inactivity"),
         ("Connection failed due to inactivity", "Automatically disconnected due to inactivity"),
-        ("upgrade_vnfap_server_pro_to_{}_tip", "Please upgrade VNFap Server Pro to version {} or newer!"),
+        ("upgrade_vnfap_server_pro_to_{}_tip", "Please upgrade VNFap Server to version {} or newer!"),
         ("pull_group_failed_tip", "Failed to refresh group"),
         ("doc_fix_wayland", "https://vnfap.com/docs/en/client/linux/#x11-required"),
         ("display_is_plugged_out_msg", "The display is plugged out, switch to the first display."),

@@ -15,13 +15,13 @@ use std::{
     time::Duration,
 };
 
-const MSG_TO_RUSTDESK_TARGET: &str = "vnfap";
+const MSG_TO_VNFAP_TARGET: &str = "vnfap";
 const MSG_TO_PEER_TARGET: &str = "peer";
 const MSG_TO_UI_TARGET: &str = "ui";
 const MSG_TO_CONFIG_TARGET: &str = "config";
 const MSG_TO_EXT_SUPPORT_TARGET: &str = "ext-support";
 
-const MSG_TO_RUSTDESK_SIGNATURE_VERIFICATION: &str = "signature_verification";
+const MSG_TO_VNFAP_SIGNATURE_VERIFICATION: &str = "signature_verification";
 
 #[allow(dead_code)]
 const MSG_TO_UI_FLUTTER_CHANNEL_MAIN: u16 = 0x01 << 0;
@@ -228,7 +228,7 @@ pub(super) extern "C" fn cb_msg(
             );
             super::callback_ext::ext_support_callback(&id, &peer, &msg)
         }
-        MSG_TO_RUSTDESK_TARGET => handle_msg_to_vnfap(id, content, len),
+        MSG_TO_VNFAP_TARGET => handle_msg_to_vnfap(id, content, len),
         _ => PluginReturn::new(
             errno::ERR_CALLBACK_TARGET,
             &format!("Unknown target '{}'", target),
@@ -256,12 +256,12 @@ fn handle_msg_to_vnfap(id: String, content: *const c_void, len: usize) -> Plugin
         s
     );
     match &msg_to_vnfap.r#type as &str {
-        MSG_TO_RUSTDESK_SIGNATURE_VERIFICATION => request_plugin_sign(id, msg_to_vnfap),
+        MSG_TO_VNFAP_SIGNATURE_VERIFICATION => request_plugin_sign(id, msg_to_vnfap),
         t => PluginReturn::new(
             errno::ERR_CALLBACK_TARGET_TYPE,
             &format!(
                 "Unknown target type '{}' for target {}",
-                t, MSG_TO_RUSTDESK_TARGET
+                t, MSG_TO_VNFAP_TARGET
             ),
         ),
     }

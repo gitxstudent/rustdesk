@@ -545,7 +545,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("auto_disconnect_option_tip", "ავტომატურად დახუროს შემომავალი სესიები მომხმარებლის არააქტიურობისას"),
         ("Connection failed due to inactivity", "კავშირი ვერ განხორციელდა არააქტიურობის გამო"),
         ("Check for software update on startup", "პროგრამის განახლების შემოწმება გაშვებისას"),
-        ("upgrade_vnfap_server_pro_to_{}_tip", "განაახლეთ VNFap Server Pro ვერსიამდე {} ან უფრო ახალი!"),
+        ("upgrade_vnfap_server_pro_to_{}_tip", "განაახლეთ VNFap Server ვერსიამდე {} ან უფრო ახალი!"),
         ("pull_group_failed_tip", "ჯგუფის განახლება შეუძლებელია"),
         ("Filter by intersection", "ფილტრაცია გადაკვეთით"),
         ("Remove wallpaper during incoming sessions", "სამუშაო მაგიდის ფონის დამალვა შემომავალი სესიის დროს"),
