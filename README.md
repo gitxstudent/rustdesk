@@ -12,11 +12,6 @@
 > **Misuse Disclaimer:** <br>
 > The developers of VNFap do not condone or support any unethical or illegal use of this software. Misuse, such as unauthorized access, control or invasion of privacy, is strictly against our guidelines. The authors are not responsible for any misuse of the application.
 
-
-Chat with us: [Discord](https://discord.gg/nDceKgxnkV) | [Twitter](https://twitter.com/vnfap) | [Reddit](https://www.reddit.com/r/vnfap) | [YouTube](https://www.youtube.com/@vnfap)
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I04VU09)
-
 Yet another remote desktop software, written in Rust. Works out of the box, no configuration required. You have full control of your data, with no concerns about security. You can use our rendezvous/relay server, [set up your own](https://vnfap.com/server), or [write your own rendezvous/relay server](https://github.com/vnfap/vnfap-server-demo).
 
 ![image](https://user-images.githubusercontent.com/71636191/171661982-430285f0-2e12-4b1d-9957-4a58e375304d.png)

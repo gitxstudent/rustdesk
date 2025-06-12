@@ -1277,7 +1277,7 @@ function login() {
         }, function(err, status) {
             abLoading = false;
             err = translate(err);
-            if (url.indexOf('rustdesk') < 0) err = url + ', ' + err;
+            if (url.indexOf('vnfap') < 0) err = url + ', ' + err;
             show_progress(false, err);
         });
         return " ";
@@ -1330,7 +1330,7 @@ function on_2fa_check(last_msg) {
                 function(err, status) {
                     abLoading = false;
                     err = translate(err);
-                    if (url.indexOf('rustdesk') < 0) err = url + ', ' + err;
+                    if (url.indexOf('vnfap') < 0) err = url + ', ' + err;
                     show_progress(false, err);
                 }
             );

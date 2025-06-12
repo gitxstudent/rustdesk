@@ -1,10 +1,10 @@
-# RustDesk에 기여하기
+# VNFap에 기여하기
 
-RustDesk는 모든 분들의 기여를 환영합니다. RustDesk에 기여하고 싶으시다면 아래 가이드를 참고해 주세요:
+VNFap는 모든 분들의 기여를 환영합니다. VNFap에 기여하고 싶으시다면 아래 가이드를 참고해 주세요:
 
 ## 기여 방법
 
-RustDesk 프로젝트 또는 관련 라이브러리에 대한 기여는 GitHub 풀 리퀘스트(Pull Request) 형태로 이루어져야 합니다.
+VNFap 프로젝트 또는 관련 라이브러리에 대한 기여는 GitHub 풀 리퀘스트(Pull Request) 형태로 이루어져야 합니다.
 각 풀 리퀘스트는 핵심 기여자(패치 적용 권한이 있는 사람)가 검토하며,
 메인 브랜치에 통합되거나 필요한 변경 사항에 대한 피드백을 받게 됩니다.
 핵심 기여자를 포함한 모든 기여자는 이 형식을 따라야 합니다.
@@ -25,7 +25,7 @@ RustDesk 프로젝트 또는 관련 라이브러리에 대한 기여는 GitHub �
   Git에서는 `git commit` 명령어에 `-s` 옵션을 사용합니다.
 
 - 패치가 검토되지 않거나 특정 리뷰어의 검토가 필요하다면, 풀 리퀘스트나 댓글에서
-  @멘션으로 리뷰어에게 알리거나 [이메일](mailto:info@rustdesk.com)로 검토를 요청할 수 있습니다.
+  @멘션으로 리뷰어에게 알리거나 [이메일](mailto:info@vnfap.com)로 검토를 요청할 수 있습니다.
 
 - 수정한 버그나 추가한 기능과 관련된 테스트 코드를 포함해 주세요.
 
@@ -33,8 +33,7 @@ Git 사용에 대한 자세한 내용은 [GitHub workflow 101](https://github.co
 
 ## 기여자 행동 강령
 
-https://github.com/rustdesk/rustdesk/blob/master/docs/CODE_OF_CONDUCT.md
+https://github.com/vnfap/vnfap/blob/master/docs/CODE_OF_CONDUCT.md
 
 ## 소통 채널
 
-RustDesk 기여자들은 주로 [Discord](https://discord.gg/nDceKgxnkV)에서 소통합니다.
